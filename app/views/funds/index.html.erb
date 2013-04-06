@@ -1,15 +1,7 @@
-<h1>Funds</h1>
+<h1>Welcome to Whirr</h1>
 
 <fieldset>
-	<ul>
-		<% @funds.each do |f| %>
-			<li>
-				<%= f.name %> |
-				<%= link_to 'Edit', edit_fund_path(f) %> |
-				<%= link_to 'Delete', f, method: :delete, data: {confirm: "Are you sure?"} %>
-			</li>
-		<% end %>
-	</ul>
 
-	<%= link_to 'Add a Fund ', new_fund_path %>
+	<%= link_to 'Log in', dashboard_path %>
+
 </fieldset>

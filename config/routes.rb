@@ -2,6 +2,13 @@ PrivateEquity::Application.routes.draw do
 
 resources :funds
 
+match '/dashboard', to: 'funds#dashboard'
+match '/snapshots', to: 'funds#snapshots'
+match '/settings', to: 'funds#settings'
+match '/alerts', to: 'funds#alerts'
+match '/fundmanagement', to: 'funds#fund_management'
+match '/snapshots', to: 'funds#snapshots'
+
 root to: 'funds#index'
 
   # The priority is based upon order of creation:
