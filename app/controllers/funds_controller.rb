@@ -36,4 +36,24 @@ class FundsController < ApplicationController
   def index
     @funds = Fund.order(:name)
   end
+
+  def dashboard
+    
+  end
+
+  def snapshots
+    
+  end
+
+  def settings
+    
+  end
+
+  def fund_management
+    
+  end
+
+  def alerts
+    
+  end
 end
