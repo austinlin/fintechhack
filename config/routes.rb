@@ -1,6 +1,9 @@
 PrivateEquity::Application.routes.draw do
 
 resources :funds
+resources :flows do
+  collection { post :import }
+end
 
 root to: 'funds#index'
 

@@ -5387,7 +5387,6 @@ Started GET "/assets/funds.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 15:07:
 Served asset /funds.js - 304 Not Modified (0ms)
 Connecting to database specified by database.yml
 
-
 Started GET "/" for 127.0.0.1 at 2013-04-06 16:16:14 -0400
 Processing by FundsController#index as HTML
   [1m[36m (0.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type = 'table' AND NOT name = 'sqlite_sequence' AND name = "funds"[0m
