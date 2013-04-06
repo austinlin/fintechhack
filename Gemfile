@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby '1.9.3', :engine => 'jruby', :engine_version => '1.7.1'
 
 gem 'rails', '3.2.13'
 
@@ -14,6 +15,7 @@ end
 
 group :production do
   gem 'pg'
+  gem 'puma'
 end
 
 gem 'bootstrap-sass', '2.1'
@@ -31,7 +33,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
-gem 'puma'
+
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
