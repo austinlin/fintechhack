@@ -1,6 +1,6 @@
 GIT
-  remote: git@github.com:sundbp/bberg.git
-  revision: 82ab763aee507c942d68ca1a133aaa99be3c5e11
+  remote: git@github.com:dsri/bberg.git
+  revision: 6012ea8dfb89dc8fd17537e7869ef121a0bde7d5
   specs:
     bberg (0.1.0)
 
@@ -114,7 +114,7 @@ GEM
       polyglot
       polyglot (>= 0.3.1)
     tzinfo (0.3.37)
-    uglifier (1.3.0)
+    uglifier (2.0.1)
       execjs (>= 0.3.0)
       multi_json (~> 1.0, >= 1.0.2)
 
