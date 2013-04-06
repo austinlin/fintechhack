@@ -1,6 +1,6 @@
 <h1>Add a Fund</h1>
 
 <%= form_for @fund do |f| %>
-	<%= render 'error_messages' %>
-	<%= render 'fund_fields' %>	
+	<%= render 'layouts/error_messages', object: f.object %>
+	<%= render 'fund_fields', f: f %>	
 <% end %>

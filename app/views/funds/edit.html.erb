@@ -1,7 +1,6 @@
 <h1>Edit Fund</h1>
-<fieldset>
-	<%= form_for @fund do |f| %>
-		<%= render 'error_messages' %>
-		<%= render 'fund_fields' %>	
-	<% end %>
-</fieldset>
+
+<%= form_for @fund do |f| %>
+	<%= render 'layouts/error_messages', object: f.object %>
+	<%= render 'fund_fields', f: f %>	
+<% end %>
