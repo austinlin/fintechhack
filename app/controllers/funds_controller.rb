@@ -36,4 +36,9 @@ class FundsController < ApplicationController
   def index
     @funds = Fund.order(:name)
   end
+
+  def show
+    @fund = Fund.find(params[:id])
+    @flows = Flow.where(fund_id: @fund.id)
+  end
 end

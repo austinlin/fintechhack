@@ -5385,3 +5385,2557 @@ Served asset /bootstrap.js - 304 Not Modified (3ms)
 
 Started GET "/assets/funds.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 15:07:45 -0400
 Served asset /funds.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 15:16:23 -0400
+Processing by FundsController#index as HTML
+  [1m[36m (1.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type = 'table' AND NOT name = 'sqlite_sequence' AND name = "funds"[0m
+  [1m[35mFund Load (0.0ms)[0m  SELECT "funds".* FROM "funds" ORDER BY name
+  Rendered funds/index.html.erb within layouts/application (160.0ms)
+  Rendered layouts/_shim.html.erb (5.0ms)
+  Rendered layouts/_header.html.erb (9.0ms)
+  Rendered layouts/_footer.html.erb (4.0ms)
+Completed 200 OK in 2893ms (Views: 2823.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 15:16:27 -0400
+Served asset /custom.css - 304 Not Modified (166ms)
+
+
+Started GET "/assets/funds.css?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 15:16:27 -0400
+Served asset /funds.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/application.css?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 15:16:27 -0400
+Served asset /application.css - 304 Not Modified (108ms)
+
+
+Started GET "/funds/new" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 15:16:29 -0400
+Processing by FundsController#new as HTML
+  Rendered layouts/_error_messages.html.erb (5.0ms)
+  Rendered funds/_fund_fields.html.erb (259.0ms)
+  Rendered funds/new.html.erb within layouts/application (303.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (3.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 723ms (Views: 719.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 15:16:30 -0400
+Served asset /application.css - 304 Not Modified (35ms)
+
+
+Started GET "/assets/custom.css?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 15:16:30 -0400
+Served asset /custom.css - 304 Not Modified (42ms)
+
+
+Started GET "/assets/funds.css?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 15:16:30 -0400
+Served asset /funds.css - 304 Not Modified (23ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 15:16:30 -0400
+Served asset /bootstrap-affix.js - 304 Not Modified (63ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 15:16:30 -0400
+Served asset /jquery-ui.js - 304 Not Modified (35ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 15:16:30 -0400
+Served asset /jquery.js - 304 Not Modified (20ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 15:16:30 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (83ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 15:16:30 -0400
+Served asset /bootstrap-transition.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 15:16:30 -0400
+Served asset /bootstrap-alert.js - 304 Not Modified (16ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 15:16:30 -0400
+Served asset /bootstrap-collapse.js - 304 Not Modified (18ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 15:16:30 -0400
+Served asset /bootstrap-dropdown.js - 304 Not Modified (16ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 15:16:31 -0400
+Served asset /bootstrap-modal.js - 304 Not Modified (19ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 15:16:31 -0400
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (46ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 15:16:31 -0400
+Served asset /bootstrap-tab.js - 304 Not Modified (46ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 15:16:31 -0400
+Served asset /bootstrap-popover.js - 304 Not Modified (26ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 15:16:31 -0400
+Served asset /bootstrap-tooltip.js - 304 Not Modified (16ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 15:16:31 -0400
+Served asset /bootstrap-typeahead.js - 304 Not Modified (52ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 15:16:31 -0400
+Served asset /bootstrap.js - 304 Not Modified (253ms)
+
+
+Started GET "/assets/funds.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 15:16:31 -0400
+Served asset /funds.js - 304 Not Modified (22ms)
+
+
+Started GET "/assets/application.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 15:16:31 -0400
+Served asset /application.js - 304 Not Modified (167ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 15:16:31 -0400
+Served asset /bootstrap-button.js - 304 Not Modified (19ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 15:16:31 -0400
+Served asset /bootstrap-carousel.js - 304 Not Modified (41ms)
+
+
+Started GET "/funds/4/edit" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 15:16:34 -0400
+Processing by FundsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mFund Load (18.0ms)[0m  [1mSELECT "funds".* FROM "funds" WHERE "funds"."id" = 4 LIMIT 1[0m
+  Rendered layouts/_error_messages.html.erb (0.0ms)
+  Rendered funds/_fund_fields.html.erb (14.0ms)
+  Rendered funds/edit.html.erb within layouts/application (33.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (12.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 541ms (Views: 439.0ms | ActiveRecord: 18.0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 15:16:35 -0400
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 15:16:35 -0400
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 15:16:35 -0400
+Served asset /custom.css - 304 Not Modified (25ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 15:16:35 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 15:16:35 -0400
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 15:16:35 -0400
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 15:16:35 -0400
+Served asset /bootstrap-button.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 15:16:35 -0400
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 15:16:35 -0400
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 15:16:35 -0400
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 15:16:35 -0400
+Served asset /bootstrap-modal.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 15:16:35 -0400
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 15:16:35 -0400
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/funds.css?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 15:16:35 -0400
+Served asset /funds.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/application.css?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 15:16:36 -0400
+Served asset /application.css - 304 Not Modified (16ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 15:16:36 -0400
+Served asset /jquery.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 15:16:36 -0400
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/funds.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 15:16:36 -0400
+Served asset /funds.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 15:16:36 -0400
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 15:16:36 -0400
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 15:16:36 -0400
+Served asset /bootstrap.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 15:16:36 -0400
+Served asset /application.js - 304 Not Modified (23ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (2.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type = 'table' AND NOT name = 'sqlite_sequence' AND name = "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  SELECT name FROM sqlite_master WHERE type = 'table' AND NOT name = 'sqlite_sequence' AND name = "schema_migrations"
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateFunds (20130406023030)
+Migrating to Addcolstofunds (20130406175351)
+Migrating to CreateFlows (20130406192617)
+  [1m[35m (0.0ms)[0m  SELECT sqlite_version(*)
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "flows" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "day" date, "fund_id" integer, "cashflow" decimal, "stock_price" decimal, "total_shares" decimal, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130406192617')
+  [1m[36m (1.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type = 'table' AND NOT name = 'sqlite_sequence' AND name = "schema_migrations"[0m
+  [1m[35m (1.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (1.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type = 'table' AND NOT name = 'sqlite_sequence'[0m
+  [1m[35m (0.0ms)[0m  SELECT name, sql FROM sqlite_master WHERE tbl_name = "flows" AND type = 'index'
+  [1m[36m (0.0ms)[0m  [1mSELECT name, sql FROM sqlite_master WHERE tbl_name = "funds" AND type = 'index'[0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:12:13 -0400
+Processing by FundsController#index as HTML
+  [1m[36m (1.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type = 'table' AND NOT name = 'sqlite_sequence' AND name = "funds"[0m
+  [1m[35mFund Load (1.0ms)[0m  SELECT "funds".* FROM "funds" ORDER BY name
+  Rendered funds/index.html.erb within layouts/application (279.0ms)
+Completed 500 Internal Server Error in 496ms
+
+ActionView::Template::Error (undefined local variable or method `import_products_path' for #<#<Class:0xa5347c3>:0x618c5880>):
+    14: 	<%= link_to 'Add a Fund ', new_fund_path %>
+    15: 
+    16: 	<h2>Import Products</h2>
+    17: 	<%= form_tag import_products_path, multipart: true do %>
+    18: 		<%= file_field_tag :file %>
+    19: 		<%= submit_tag 'Import' %>
+    20: 	<% end %>
+  app/views/funds/index.html.erb:17:in `_app_views_funds_index_html_erb__472241824_7074'
+
+
+  Rendered /Users/Sueno/.rvm/gems/jruby-1.7.3/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (30.0ms)
+  Rendered /Users/Sueno/.rvm/gems/jruby-1.7.3/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.0ms)
+  Rendered /Users/Sueno/.rvm/gems/jruby-1.7.3/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (77.0ms)
+
+
+Started GET "/" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:12:50 -0400
+Processing by FundsController#index as HTML
+  [1m[36mFund Load (1.0ms)[0m  [1mSELECT "funds".* FROM "funds" ORDER BY name[0m
+  Rendered funds/index.html.erb within layouts/application (48.0ms)
+Compiled flows.css  (107ms)  (pid 79918)
+Compiled application.css  (279ms)  (pid 79918)
+Compiled flows.js  (4579ms)  (pid 79918)
+Compiled application.js  (4931ms)  (pid 79918)
+  Rendered layouts/_shim.html.erb (3.0ms)
+  Rendered layouts/_header.html.erb (8.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+Completed 200 OK in 8106ms (Views: 8102.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/flows.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:12:59 -0400
+Served asset /flows.js - 200 OK (41ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:12:59 -0400
+Served asset /bootstrap-tooltip.js - 304 Not Modified (65ms)
+
+
+Started GET "/assets/application.css?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:12:59 -0400
+Served asset /application.css - 304 Not Modified (246ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:12:59 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (37ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:12:59 -0400
+Served asset /jquery.js - 304 Not Modified (36ms)
+
+
+Started GET "/assets/flows.css?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:12:59 -0400
+Served asset /flows.css - 200 OK (45ms)
+
+
+Started GET "/assets/custom.css?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:12:59 -0400
+Served asset /custom.css - 304 Not Modified (73ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:13:00 -0400
+Served asset /bootstrap-transition.js - 304 Not Modified (82ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:13:00 -0400
+Served asset /jquery-ui.js - 304 Not Modified (38ms)
+
+
+Started GET "/assets/funds.css?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:13:00 -0400
+Served asset /funds.css - 304 Not Modified (23ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:13:00 -0400
+Served asset /bootstrap-tab.js - 304 Not Modified (339ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:13:01 -0400
+Served asset /bootstrap-collapse.js - 304 Not Modified (220ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:13:01 -0400
+Served asset /bootstrap-carousel.js - 304 Not Modified (456ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:13:01 -0400
+Served asset /bootstrap-button.js - 304 Not Modified (112ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:13:01 -0400
+Served asset /bootstrap-affix.js - 304 Not Modified (250ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:13:02 -0400
+Served asset /bootstrap-popover.js - 304 Not Modified (391ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:13:02 -0400
+Served asset /bootstrap-dropdown.js - 304 Not Modified (56ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:13:02 -0400
+Served asset /bootstrap-modal.js - 304 Not Modified (325ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:13:03 -0400
+Served asset /bootstrap-typeahead.js - 304 Not Modified (169ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:13:03 -0400
+Served asset /bootstrap.js - 304 Not Modified (430ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:13:03 -0400
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (26ms)
+
+
+Started GET "/assets/application.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:13:03 -0400
+Served asset /application.js - 304 Not Modified (724ms)
+
+
+Started GET "/assets/funds.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:13:04 -0400
+Served asset /funds.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:13:05 -0400
+Served asset /bootstrap-alert.js - 304 Not Modified (142ms)
+
+
+Started POST "/flows/import" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:14:45 -0400
+
+SyntaxError (/Users/Sueno/Documents/rails_project/whirr/fintechhack/app/models/flow.rb:17: syntax error, unexpected tRPAREN
+
+  			Flow.new(fund_id: row["fund id"], day: Date.strptime(row["date"]), "%m/%d/%y")
+                                                                                  ^):
+  app/controllers/flows_controller.rb:1:in `(root)'
+
+
+  Rendered /Users/Sueno/.rvm/gems/jruby-1.7.3/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (30.0ms)
+  Rendered /Users/Sueno/.rvm/gems/jruby-1.7.3/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (83.0ms)
+  Rendered /Users/Sueno/.rvm/gems/jruby-1.7.3/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (158.0ms)
+
+
+Started GET "/" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:16:20 -0400
+Processing by FundsController#index as HTML
+  [1m[35m (0.0ms)[0m  SELECT name FROM sqlite_master WHERE type = 'table' AND NOT name = 'sqlite_sequence' AND name = "funds"
+  [1m[36mFund Load (0.0ms)[0m  [1mSELECT "funds".* FROM "funds" ORDER BY name[0m
+  Rendered funds/index.html.erb within layouts/application (191.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (7.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+Completed 200 OK in 1056ms (Views: 1035.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:16:21 -0400
+Served asset /application.css - 304 Not Modified (39ms)
+
+
+Started GET "/assets/custom.css?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:16:21 -0400
+Served asset /custom.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:16:21 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-04-06 17:16:21 -0400
+Served asset /bootstrap-transition.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/flows.css?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:16:21 -0400
+Served asset /flows.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-04-06 17:16:21 -0400
+Served asset /jquery-ui.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/funds.css?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:16:21 -0400
+Served asset /funds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-04-06 17:16:21 -0400
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-06 17:16:21 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-04-06 17:16:22 -0400
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-04-06 17:16:22 -0400
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-04-06 17:16:22 -0400
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-04-06 17:16:22 -0400
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-04-06 17:16:22 -0400
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-04-06 17:16:22 -0400
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-04-06 17:16:22 -0400
+Served asset /bootstrap-modal.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-04-06 17:16:22 -0400
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-04-06 17:16:22 -0400
+Served asset /bootstrap-tab.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-04-06 17:16:22 -0400
+Served asset /bootstrap-tooltip.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-04-06 17:16:22 -0400
+Served asset /bootstrap-typeahead.js - 304 Not Modified (68ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-04-06 17:16:22 -0400
+Served asset /bootstrap.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/flows.js?body=1" for 127.0.0.1 at 2013-04-06 17:16:22 -0400
+Served asset /flows.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/funds.js?body=1" for 127.0.0.1 at 2013-04-06 17:16:22 -0400
+Served asset /funds.js - 304 Not Modified (26ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-06 17:16:22 -0400
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started POST "/flows/import" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:16:29 -0400
+Processing by FlowsController#import as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dfknGy0k2uxL1DaXJyuzJ44hWEocU3nV76ido4pWOVQ=", "file"=>#<ActionDispatch::Http::UploadedFile:0x3c76ced6 @original_filename="Cash Flows - Fund 1.csv", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"Cash Flows - Fund 1.csv\"\r\nContent-Type: text/csv\r\n", @tempfile=#<Tempfile:/var/folders/kt/0__cbz4j42s7yhw1ssclc9lr0000gn/T/RackMultipart.79918.60748>, @content_type="text/csv">, "commit"=>"Import"}
+  [1m[35m (1.0ms)[0m  SELECT name FROM sqlite_master WHERE type = 'table' AND NOT name = 'sqlite_sequence' AND name = "flows"
+  [1m[36mFlow Load (13.0ms)[0m  [1mSELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2003-08-18' ORDER BY flows.day LIMIT 1[0m
+  [1m[35mFund Load (0.0ms)[0m  SELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "flows" ("cashflow", "created_at", "day", "fund_id", "stock_price", "total_shares", "updated_at") VALUES (-5600.0, '2013-04-06 21:16:29.893000', '2003-08-18', 1, NULL, NULL, '2013-04-06 21:16:29.893000')[0m
+  [1m[35mFlow Load (1.0ms)[0m  SELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2003-10-20' ORDER BY flows.day LIMIT 1
+  [1m[36mFund Load (0.0ms)[0m  [1mSELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "flows" ("cashflow", "created_at", "day", "fund_id", "stock_price", "total_shares", "updated_at") VALUES (-30400.0, '2013-04-06 21:16:30.000000', '2003-10-20', 1, NULL, NULL, '2013-04-06 21:16:30.000000')
+  [1m[36mFlow Load (0.0ms)[0m  [1mSELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2004-02-17' ORDER BY flows.day LIMIT 1[0m
+  [1m[35mFund Load (0.0ms)[0m  SELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "flows" ("cashflow", "created_at", "day", "fund_id", "stock_price", "total_shares", "updated_at") VALUES (-80000.0, '2013-04-06 21:16:30.042000', '2004-02-17', 1, NULL, NULL, '2013-04-06 21:16:30.042000')[0m
+  [1m[35mFlow Load (1.0ms)[0m  SELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2004-04-13' ORDER BY flows.day LIMIT 1
+  [1m[36mFund Load (1.0ms)[0m  [1mSELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "flows" ("cashflow", "created_at", "day", "fund_id", "stock_price", "total_shares", "updated_at") VALUES (-42000.0, '2013-04-06 21:16:30.119000', '2004-04-13', 1, NULL, NULL, '2013-04-06 21:16:30.119000')
+  [1m[36mFlow Load (0.0ms)[0m  [1mSELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2004-07-02' ORDER BY flows.day LIMIT 1[0m
+  [1m[35mFund Load (0.0ms)[0m  SELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "flows" ("cashflow", "created_at", "day", "fund_id", "stock_price", "total_shares", "updated_at") VALUES (-30000.0, '2013-04-06 21:16:30.178000', '2004-07-02', 1, NULL, NULL, '2013-04-06 21:16:30.178000')[0m
+  [1m[35mFlow Load (1.0ms)[0m  SELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2004-08-21' ORDER BY flows.day LIMIT 1
+  [1m[36mFund Load (1.0ms)[0m  [1mSELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1[0m
+  [1m[35mSQL (19.0ms)[0m  INSERT INTO "flows" ("cashflow", "created_at", "day", "fund_id", "stock_price", "total_shares", "updated_at") VALUES (-34000.0, '2013-04-06 21:16:30.221000', '2004-08-21', 1, NULL, NULL, '2013-04-06 21:16:30.221000')
+  [1m[36mFlow Load (1.0ms)[0m  [1mSELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2004-10-08' ORDER BY flows.day LIMIT 1[0m
+  [1m[35mFund Load (0.0ms)[0m  SELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "flows" ("cashflow", "created_at", "day", "fund_id", "stock_price", "total_shares", "updated_at") VALUES (-56000.0, '2013-04-06 21:16:30.327000', '2004-10-08', 1, NULL, NULL, '2013-04-06 21:16:30.327000')[0m
+  [1m[35mFlow Load (0.0ms)[0m  SELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2004-11-12' ORDER BY flows.day LIMIT 1
+  [1m[36mFund Load (1.0ms)[0m  [1mSELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "flows" ("cashflow", "created_at", "day", "fund_id", "stock_price", "total_shares", "updated_at") VALUES (-62000.0, '2013-04-06 21:16:30.373000', '2004-11-12', 1, NULL, NULL, '2013-04-06 21:16:30.373000')
+  [1m[36mFlow Load (1.0ms)[0m  [1mSELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2005-01-04' ORDER BY flows.day LIMIT 1[0m
+  [1m[35mFund Load (0.0ms)[0m  SELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "flows" ("cashflow", "created_at", "day", "fund_id", "stock_price", "total_shares", "updated_at") VALUES (-74000.0, '2013-04-06 21:16:30.493000', '2005-01-04', 1, NULL, NULL, '2013-04-06 21:16:30.493000')[0m
+  [1m[35mFlow Load (3.0ms)[0m  SELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2005-02-17' ORDER BY flows.day LIMIT 1
+  [1m[36mFund Load (1.0ms)[0m  [1mSELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "flows" ("cashflow", "created_at", "day", "fund_id", "stock_price", "total_shares", "updated_at") VALUES (-30025.0, '2013-04-06 21:16:30.537000', '2005-02-17', 1, NULL, NULL, '2013-04-06 21:16:30.537000')
+  [1m[36mFlow Load (0.0ms)[0m  [1mSELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2005-03-28' ORDER BY flows.day LIMIT 1[0m
+  [1m[35mFund Load (1.0ms)[0m  SELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "flows" ("cashflow", "created_at", "day", "fund_id", "stock_price", "total_shares", "updated_at") VALUES (-60000.0, '2013-04-06 21:16:30.572000', '2005-03-28', 1, NULL, NULL, '2013-04-06 21:16:30.572000')[0m
+  [1m[35mFlow Load (0.0ms)[0m  SELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2005-06-23' ORDER BY flows.day LIMIT 1
+  [1m[36mFund Load (0.0ms)[0m  [1mSELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "flows" ("cashflow", "created_at", "day", "fund_id", "stock_price", "total_shares", "updated_at") VALUES (-36000.0, '2013-04-06 21:16:30.606000', '2005-06-23', 1, NULL, NULL, '2013-04-06 21:16:30.606000')
+  [1m[36mFlow Load (1.0ms)[0m  [1mSELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2005-08-08' ORDER BY flows.day LIMIT 1[0m
+  [1m[35mFund Load (0.0ms)[0m  SELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "flows" ("cashflow", "created_at", "day", "fund_id", "stock_price", "total_shares", "updated_at") VALUES (-114000.0, '2013-04-06 21:16:30.641000', '2005-08-08', 1, NULL, NULL, '2013-04-06 21:16:30.641000')[0m
+  [1m[35mFlow Load (0.0ms)[0m  SELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2005-10-21' ORDER BY flows.day LIMIT 1
+  [1m[36mFund Load (0.0ms)[0m  [1mSELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "flows" ("cashflow", "created_at", "day", "fund_id", "stock_price", "total_shares", "updated_at") VALUES (-86000.0, '2013-04-06 21:16:30.700000', '2005-10-21', 1, NULL, NULL, '2013-04-06 21:16:30.700000')
+  [1m[36mFlow Load (0.0ms)[0m  [1mSELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2006-01-20' ORDER BY flows.day LIMIT 1[0m
+  [1m[35mFund Load (0.0ms)[0m  SELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "flows" ("cashflow", "created_at", "day", "fund_id", "stock_price", "total_shares", "updated_at") VALUES (-60000.0, '2013-04-06 21:16:30.750000', '2006-01-20', 1, NULL, NULL, '2013-04-06 21:16:30.750000')[0m
+  [1m[35mFlow Load (1.0ms)[0m  SELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2006-02-15' ORDER BY flows.day LIMIT 1
+  [1m[36mFund Load (0.0ms)[0m  [1mSELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "flows" ("cashflow", "created_at", "day", "fund_id", "stock_price", "total_shares", "updated_at") VALUES (-60000.0, '2013-04-06 21:16:30.806000', '2006-02-15', 1, NULL, NULL, '2013-04-06 21:16:30.806000')
+  [1m[36mFlow Load (0.0ms)[0m  [1mSELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2006-04-21' ORDER BY flows.day LIMIT 1[0m
+  [1m[35mFund Load (0.0ms)[0m  SELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "flows" ("cashflow", "created_at", "day", "fund_id", "stock_price", "total_shares", "updated_at") VALUES (-40000.0, '2013-04-06 21:16:30.876000', '2006-04-21', 1, NULL, NULL, '2013-04-06 21:16:30.876000')[0m
+  [1m[35mFlow Load (1.0ms)[0m  SELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2006-06-15' ORDER BY flows.day LIMIT 1
+  [1m[36mFund Load (0.0ms)[0m  [1mSELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "flows" ("cashflow", "created_at", "day", "fund_id", "stock_price", "total_shares", "updated_at") VALUES (-120000.0, '2013-04-06 21:16:30.926000', '2006-06-15', 1, NULL, NULL, '2013-04-06 21:16:30.926000')
+  [1m[36mFlow Load (1.0ms)[0m  [1mSELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2006-08-31' ORDER BY flows.day LIMIT 1[0m
+  [1m[35mFund Load (1.0ms)[0m  SELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "flows" ("cashflow", "created_at", "day", "fund_id", "stock_price", "total_shares", "updated_at") VALUES (-90000.0, '2013-04-06 21:16:30.953000', '2006-08-31', 1, NULL, NULL, '2013-04-06 21:16:30.953000')[0m
+  [1m[35mFlow Load (1.0ms)[0m  SELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2006-09-13' ORDER BY flows.day LIMIT 1
+  [1m[36mFund Load (1.0ms)[0m  [1mSELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "flows" ("cashflow", "created_at", "day", "fund_id", "stock_price", "total_shares", "updated_at") VALUES (-80000.0, '2013-04-06 21:16:30.982000', '2006-09-13', 1, NULL, NULL, '2013-04-06 21:16:30.982000')
+  [1m[36mFlow Load (1.0ms)[0m  [1mSELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2006-12-12' ORDER BY flows.day LIMIT 1[0m
+  [1m[35mFund Load (1.0ms)[0m  SELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "flows" ("cashflow", "created_at", "day", "fund_id", "stock_price", "total_shares", "updated_at") VALUES (120000.0, '2013-04-06 21:16:31.019000', '2006-12-12', 1, NULL, NULL, '2013-04-06 21:16:31.019000')[0m
+  [1m[35mFlow Load (0.0ms)[0m  SELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2006-12-13' ORDER BY flows.day LIMIT 1
+  [1m[36mFund Load (1.0ms)[0m  [1mSELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1[0m
+  [1m[35mSQL (34.0ms)[0m  INSERT INTO "flows" ("cashflow", "created_at", "day", "fund_id", "stock_price", "total_shares", "updated_at") VALUES (135738.1, '2013-04-06 21:16:31.047000', '2006-12-13', 1, NULL, NULL, '2013-04-06 21:16:31.047000')
+  [1m[36mFlow Load (0.0ms)[0m  [1mSELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2007-01-16' ORDER BY flows.day LIMIT 1[0m
+  [1m[35mFund Load (1.0ms)[0m  SELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "flows" ("cashflow", "created_at", "day", "fund_id", "stock_price", "total_shares", "updated_at") VALUES (-30000.0, '2013-04-06 21:16:31.126000', '2007-01-16', 1, NULL, NULL, '2013-04-06 21:16:31.126000')[0m
+  [1m[35mFlow Load (0.0ms)[0m  SELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2007-03-27' ORDER BY flows.day LIMIT 1
+  [1m[36mFund Load (0.0ms)[0m  [1mSELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "flows" ("cashflow", "created_at", "day", "fund_id", "stock_price", "total_shares", "updated_at") VALUES (-60000.0, '2013-04-06 21:16:31.222000', '2007-03-27', 1, NULL, NULL, '2013-04-06 21:16:31.222000')
+  [1m[36mFlow Load (0.0ms)[0m  [1mSELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2007-05-21' ORDER BY flows.day LIMIT 1[0m
+  [1m[35mFund Load (1.0ms)[0m  SELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "flows" ("cashflow", "created_at", "day", "fund_id", "stock_price", "total_shares", "updated_at") VALUES (-30000.0, '2013-04-06 21:16:31.273000', '2007-05-21', 1, NULL, NULL, '2013-04-06 21:16:31.273000')[0m
+  [1m[35mFlow Load (0.0ms)[0m  SELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2007-07-03' ORDER BY flows.day LIMIT 1
+  [1m[36mFund Load (0.0ms)[0m  [1mSELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "flows" ("cashflow", "created_at", "day", "fund_id", "stock_price", "total_shares", "updated_at") VALUES (-30000.0, '2013-04-06 21:16:31.470000', '2007-07-03', 1, NULL, NULL, '2013-04-06 21:16:31.470000')
+  [1m[36mFlow Load (0.0ms)[0m  [1mSELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2007-09-17' ORDER BY flows.day LIMIT 1[0m
+  [1m[35mFund Load (0.0ms)[0m  SELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "flows" ("cashflow", "created_at", "day", "fund_id", "stock_price", "total_shares", "updated_at") VALUES (-124000.0, '2013-04-06 21:16:31.539000', '2007-09-17', 1, NULL, NULL, '2013-04-06 21:16:31.539000')[0m
+  [1m[35mFlow Load (1.0ms)[0m  SELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2007-10-02' ORDER BY flows.day LIMIT 1
+  [1m[36mFund Load (1.0ms)[0m  [1mSELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "flows" ("cashflow", "created_at", "day", "fund_id", "stock_price", "total_shares", "updated_at") VALUES (13496.63, '2013-04-06 21:16:31.580000', '2007-10-02', 1, NULL, NULL, '2013-04-06 21:16:31.580000')
+  [1m[36mFlow Load (0.0ms)[0m  [1mSELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2007-12-04' ORDER BY flows.day LIMIT 1[0m
+  [1m[35mFund Load (1.0ms)[0m  SELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "flows" ("cashflow", "created_at", "day", "fund_id", "stock_price", "total_shares", "updated_at") VALUES (-96000.0, '2013-04-06 21:16:31.616000', '2007-12-04', 1, NULL, NULL, '2013-04-06 21:16:31.616000')[0m
+  [1m[35mFlow Load (0.0ms)[0m  SELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2008-01-23' ORDER BY flows.day LIMIT 1
+  [1m[36mFund Load (0.0ms)[0m  [1mSELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "flows" ("cashflow", "created_at", "day", "fund_id", "stock_price", "total_shares", "updated_at") VALUES (-20000.0, '2013-04-06 21:16:31.645000', '2008-01-23', 1, NULL, NULL, '2013-04-06 21:16:31.645000')
+  [1m[36mFlow Load (0.0ms)[0m  [1mSELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2008-03-26' ORDER BY flows.day LIMIT 1[0m
+  [1m[35mFund Load (0.0ms)[0m  SELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "flows" ("cashflow", "created_at", "day", "fund_id", "stock_price", "total_shares", "updated_at") VALUES (-40000.0, '2013-04-06 21:16:31.672000', '2008-03-26', 1, NULL, NULL, '2013-04-06 21:16:31.672000')[0m
+  [1m[35mFlow Load (1.0ms)[0m  SELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2008-06-03' ORDER BY flows.day LIMIT 1
+  [1m[36mFund Load (0.0ms)[0m  [1mSELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "flows" ("cashflow", "created_at", "day", "fund_id", "stock_price", "total_shares", "updated_at") VALUES (-70000.0, '2013-04-06 21:16:31.704000', '2008-06-03', 1, NULL, NULL, '2013-04-06 21:16:31.704000')
+  [1m[36mFlow Load (3.0ms)[0m  [1mSELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2008-06-03' ORDER BY flows.day LIMIT 1[0m
+  [1m[35mFund Load (1.0ms)[0m  SELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mUPDATE "flows" SET "cashflow" = 45411.56, "updated_at" = '2013-04-06 21:16:31.740000' WHERE "flows"."id" = 32[0m
+  [1m[35mFlow Load (1.0ms)[0m  SELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2008-07-09' ORDER BY flows.day LIMIT 1
+  [1m[36mFund Load (1.0ms)[0m  [1mSELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "flows" ("cashflow", "created_at", "day", "fund_id", "stock_price", "total_shares", "updated_at") VALUES (-30000.0, '2013-04-06 21:16:31.777000', '2008-07-09', 1, NULL, NULL, '2013-04-06 21:16:31.777000')
+  [1m[36mFlow Load (0.0ms)[0m  [1mSELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2008-10-06' ORDER BY flows.day LIMIT 1[0m
+  [1m[35mFund Load (0.0ms)[0m  SELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "flows" ("cashflow", "created_at", "day", "fund_id", "stock_price", "total_shares", "updated_at") VALUES (-50000.0, '2013-04-06 21:16:31.807000', '2008-10-06', 1, NULL, NULL, '2013-04-06 21:16:31.807000')[0m
+  [1m[35mFlow Load (1.0ms)[0m  SELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2009-03-26' ORDER BY flows.day LIMIT 1
+  [1m[36mFund Load (1.0ms)[0m  [1mSELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "flows" ("cashflow", "created_at", "day", "fund_id", "stock_price", "total_shares", "updated_at") VALUES (-40000.0, '2013-04-06 21:16:31.834000', '2009-03-26', 1, NULL, NULL, '2013-04-06 21:16:31.834000')
+  [1m[36mFlow Load (0.0ms)[0m  [1mSELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2009-04-29' ORDER BY flows.day LIMIT 1[0m
+  [1m[35mFund Load (0.0ms)[0m  SELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "flows" ("cashflow", "created_at", "day", "fund_id", "stock_price", "total_shares", "updated_at") VALUES (-26000.0, '2013-04-06 21:16:31.865000', '2009-04-29', 1, NULL, NULL, '2013-04-06 21:16:31.865000')[0m
+  [1m[35mFlow Load (0.0ms)[0m  SELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2009-09-04' ORDER BY flows.day LIMIT 1
+  [1m[36mFund Load (0.0ms)[0m  [1mSELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "flows" ("cashflow", "created_at", "day", "fund_id", "stock_price", "total_shares", "updated_at") VALUES (-24000.0, '2013-04-06 21:16:31.899000', '2009-09-04', 1, NULL, NULL, '2013-04-06 21:16:31.899000')
+  [1m[36mFlow Load (1.0ms)[0m  [1mSELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2009-11-11' ORDER BY flows.day LIMIT 1[0m
+  [1m[35mFund Load (1.0ms)[0m  SELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "flows" ("cashflow", "created_at", "day", "fund_id", "stock_price", "total_shares", "updated_at") VALUES (70000.0, '2013-04-06 21:16:31.928000', '2009-11-11', 1, NULL, NULL, '2013-04-06 21:16:31.928000')[0m
+  [1m[35mFlow Load (1.0ms)[0m  SELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2009-11-11' ORDER BY flows.day LIMIT 1
+  [1m[36mFund Load (1.0ms)[0m  [1mSELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  UPDATE "flows" SET "cashflow" = 75759.55, "updated_at" = '2013-04-06 21:16:31.959000' WHERE "flows"."id" = 38
+  [1m[36mFlow Load (1.0ms)[0m  [1mSELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2010-01-06' ORDER BY flows.day LIMIT 1[0m
+  [1m[35mFund Load (0.0ms)[0m  SELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "flows" ("cashflow", "created_at", "day", "fund_id", "stock_price", "total_shares", "updated_at") VALUES (-34000.0, '2013-04-06 21:16:31.986000', '2010-01-06', 1, NULL, NULL, '2013-04-06 21:16:31.986000')[0m
+  [1m[35mFlow Load (0.0ms)[0m  SELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2010-03-15' ORDER BY flows.day LIMIT 1
+  [1m[36mFund Load (0.0ms)[0m  [1mSELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "flows" ("cashflow", "created_at", "day", "fund_id", "stock_price", "total_shares", "updated_at") VALUES (-20000.0, '2013-04-06 21:16:32.013000', '2010-03-15', 1, NULL, NULL, '2013-04-06 21:16:32.013000')
+  [1m[36mFlow Load (0.0ms)[0m  [1mSELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2010-03-15' ORDER BY flows.day LIMIT 1[0m
+  [1m[35mFund Load (0.0ms)[0m  SELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1
+  [1m[36m (1.0ms)[0m  [1mUPDATE "flows" SET "cashflow" = 174377.64, "updated_at" = '2013-04-06 21:16:32.043000' WHERE "flows"."id" = 40[0m
+  [1m[35mFlow Load (0.0ms)[0m  SELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2010-04-23' ORDER BY flows.day LIMIT 1
+  [1m[36mFund Load (1.0ms)[0m  [1mSELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "flows" ("cashflow", "created_at", "day", "fund_id", "stock_price", "total_shares", "updated_at") VALUES (-20000.0, '2013-04-06 21:16:32.072000', '2010-04-23', 1, NULL, NULL, '2013-04-06 21:16:32.072000')
+  [1m[36mFlow Load (1.0ms)[0m  [1mSELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2010-07-26' ORDER BY flows.day LIMIT 1[0m
+  [1m[35mFund Load (1.0ms)[0m  SELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "flows" ("cashflow", "created_at", "day", "fund_id", "stock_price", "total_shares", "updated_at") VALUES (-34000.0, '2013-04-06 21:16:32.105000', '2010-07-26', 1, NULL, NULL, '2013-04-06 21:16:32.105000')[0m
+  [1m[35mFlow Load (0.0ms)[0m  SELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2010-09-15' ORDER BY flows.day LIMIT 1
+  [1m[36mFund Load (0.0ms)[0m  [1mSELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "flows" ("cashflow", "created_at", "day", "fund_id", "stock_price", "total_shares", "updated_at") VALUES (11558.08, '2013-04-06 21:16:32.130000', '2010-09-15', 1, NULL, NULL, '2013-04-06 21:16:32.130000')
+  [1m[36mFlow Load (0.0ms)[0m  [1mSELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2010-10-25' ORDER BY flows.day LIMIT 1[0m
+  [1m[35mFund Load (1.0ms)[0m  SELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "flows" ("cashflow", "created_at", "day", "fund_id", "stock_price", "total_shares", "updated_at") VALUES (-26000.0, '2013-04-06 21:16:32.156000', '2010-10-25', 1, NULL, NULL, '2013-04-06 21:16:32.156000')[0m
+  [1m[35mFlow Load (0.0ms)[0m  SELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2011-02-01' ORDER BY flows.day LIMIT 1
+  [1m[36mFund Load (0.0ms)[0m  [1mSELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "flows" ("cashflow", "created_at", "day", "fund_id", "stock_price", "total_shares", "updated_at") VALUES (-10000.0, '2013-04-06 21:16:32.190000', '2011-02-01', 1, NULL, NULL, '2013-04-06 21:16:32.190000')
+  [1m[36mFlow Load (0.0ms)[0m  [1mSELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2011-04-21' ORDER BY flows.day LIMIT 1[0m
+  [1m[35mFund Load (1.0ms)[0m  SELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "flows" ("cashflow", "created_at", "day", "fund_id", "stock_price", "total_shares", "updated_at") VALUES (-10000.0, '2013-04-06 21:16:32.221000', '2011-04-21', 1, NULL, NULL, '2013-04-06 21:16:32.221000')[0m
+  [1m[35mFlow Load (1.0ms)[0m  SELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2011-06-17' ORDER BY flows.day LIMIT 1
+  [1m[36mFund Load (0.0ms)[0m  [1mSELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "flows" ("cashflow", "created_at", "day", "fund_id", "stock_price", "total_shares", "updated_at") VALUES (132971.69, '2013-04-06 21:16:32.257000', '2011-06-17', 1, NULL, NULL, '2013-04-06 21:16:32.257000')
+  [1m[36mFlow Load (1.0ms)[0m  [1mSELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2011-09-08' ORDER BY flows.day LIMIT 1[0m
+  [1m[35mFund Load (1.0ms)[0m  SELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "flows" ("cashflow", "created_at", "day", "fund_id", "stock_price", "total_shares", "updated_at") VALUES (41841.12, '2013-04-06 21:16:32.396000', '2011-09-08', 1, NULL, NULL, '2013-04-06 21:16:32.396000')[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 3126ms (ActiveRecord: 148.0ms)
+
+
+Started GET "/" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:16:32 -0400
+Processing by FundsController#index as HTML
+  [1m[35mFund Load (1.0ms)[0m  SELECT "funds".* FROM "funds" ORDER BY name
+  Rendered funds/index.html.erb within layouts/application (25.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (3.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 469ms (Views: 466.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:16:33 -0400
+Served asset /custom.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/application.css?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:16:33 -0400
+Served asset /application.css - 304 Not Modified (16ms)
+
+
+Started GET "/assets/flows.css?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:16:33 -0400
+Served asset /flows.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:16:33 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:16:33 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:16:33 -0400
+Served asset /bootstrap-alert.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/funds.css?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:16:33 -0400
+Served asset /funds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:16:33 -0400
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:16:33 -0400
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:16:33 -0400
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:16:33 -0400
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:16:33 -0400
+Served asset /jquery-ui.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:16:33 -0400
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:16:33 -0400
+Served asset /bootstrap-dropdown.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:16:33 -0400
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:16:33 -0400
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:16:33 -0400
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:16:33 -0400
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:16:33 -0400
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flows.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:16:33 -0400
+Served asset /flows.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/funds.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:16:33 -0400
+Served asset /funds.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:16:33 -0400
+Served asset /application.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:16:33 -0400
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:16:33 -0400
+Served asset /bootstrap.js - 304 Not Modified (2ms)
+
+
+Started GET "/funds/1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:16:36 -0400
+Processing by FundsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFund Load (0.0ms)[0m  [1mSELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "flows" WHERE "flows"."fund_id" = 1
+  [1m[36mFlow Load (2.0ms)[0m  [1mSELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 ORDER BY flows.day[0m
+  Rendered funds/show.html.erb within layouts/application (78.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 698ms (Views: 690.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:16:36 -0400
+Served asset /custom.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/flows.css?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:16:36 -0400
+Served asset /flows.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:16:37 -0400
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/funds.css?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:16:37 -0400
+Served asset /funds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:16:37 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:16:37 -0400
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:16:37 -0400
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:16:37 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:16:37 -0400
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:16:37 -0400
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:16:37 -0400
+Served asset /bootstrap-button.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:16:37 -0400
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:16:37 -0400
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:16:37 -0400
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:16:37 -0400
+Served asset /bootstrap-dropdown.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:16:37 -0400
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:16:37 -0400
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:16:37 -0400
+Served asset /bootstrap.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:16:37 -0400
+Served asset /bootstrap-tab.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:16:37 -0400
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:16:37 -0400
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flows.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:16:37 -0400
+Served asset /flows.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/funds.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:16:37 -0400
+Served asset /funds.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:16:37 -0400
+Served asset /application.js - 304 Not Modified (31ms)
+
+
+Started GET "/funds/1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:18:08 -0400
+Processing by FundsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mFund Load (0.0ms)[0m  SELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "flows" WHERE "flows"."fund_id" = 1[0m
+  [1m[35mFlow Load (3.0ms)[0m  SELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 ORDER BY flows.day
+  Rendered funds/show.html.erb within layouts/application (55.0ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 452ms (Views: 442.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/flows.css?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:18:09 -0400
+Served asset /flows.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:18:09 -0400
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:18:09 -0400
+Served asset /custom.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:18:09 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:18:09 -0400
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/funds.css?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:18:09 -0400
+Served asset /funds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:18:09 -0400
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:18:09 -0400
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:18:09 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:18:09 -0400
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:18:09 -0400
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:18:09 -0400
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:18:09 -0400
+Served asset /bootstrap-carousel.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:18:09 -0400
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:18:09 -0400
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:18:09 -0400
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:18:09 -0400
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:18:09 -0400
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:18:09 -0400
+Served asset /bootstrap.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:18:10 -0400
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:18:10 -0400
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flows.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:18:10 -0400
+Served asset /flows.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/funds.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:18:10 -0400
+Served asset /funds.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:18:10 -0400
+Served asset /application.js - 304 Not Modified (31ms)
+
+
+Started GET "/funds/1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:18:32 -0400
+Processing by FundsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFund Load (0.0ms)[0m  [1mSELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "flows" WHERE "flows"."fund_id" = 1
+  [1m[36mFlow Load (2.0ms)[0m  [1mSELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 ORDER BY flows.day[0m
+  Rendered funds/show.html.erb within layouts/application (47.0ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (3.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 409ms (Views: 402.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:18:32 -0400
+Served asset /custom.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/application.css?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:18:32 -0400
+Served asset /application.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:18:32 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:18:32 -0400
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/funds.css?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:18:32 -0400
+Served asset /funds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/flows.css?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:18:32 -0400
+Served asset /flows.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:18:32 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:18:32 -0400
+Served asset /bootstrap-transition.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:18:32 -0400
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:18:32 -0400
+Served asset /bootstrap-carousel.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:18:32 -0400
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:18:32 -0400
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:18:32 -0400
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:18:32 -0400
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:18:32 -0400
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:18:32 -0400
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:18:32 -0400
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:18:32 -0400
+Served asset /bootstrap.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/flows.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:18:33 -0400
+Served asset /flows.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/funds.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:18:33 -0400
+Served asset /funds.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:18:33 -0400
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:18:33 -0400
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:18:33 -0400
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:18:33 -0400
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/funds/1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:25:32 -0400
+Processing by FundsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mFund Load (1.0ms)[0m  SELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1
+ERROR: compiling _app_views_funds_show_html_erb___781587980_12748 RAISED /Users/Sueno/Documents/rails_project/whirr/fintechhack/app/views/funds/show.html.erb:20: syntax error, unexpected kEND
+
+');		 end 
+        ^
+Function body:           def _app_views_funds_show_html_erb___781587980_12748(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "funds/show";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_concat('<h1>');@output_buffer.append= ( @fund.name );@output_buffer.safe_concat('</h1>
+
+'); if @flows.present? 
+@output_buffer.safe_concat('	<table style="width:60%">
+		<th>
+			<td>Date</td>
+			<td>C/D</td>
+			<td>Stock Price</td>
+			<td>Number Shares</td>
+		</th>
+
+');		 @flows.each do |f| 
+@output_buffer.safe_concat('			<tr>
+				<td></td>
+				<td>');@output_buffer.append= ( f.day );@output_buffer.safe_concat('</td>
+				<td>');@output_buffer.append= ( number_with_delimiter(f.cashflow, delimiter: "" );@output_buffer.safe_concat('</td>
+				<td>');@output_buffer.append= ( f.stock_price ? f.stock_price : "--"  );@output_buffer.safe_concat('</td>
+				<td>');@output_buffer.append= ( f.total_shares ? f.total_shares : "--" );@output_buffer.safe_concat('</td>
+			</tr>
+');		 end 
+@output_buffer.safe_concat('	</table>
+'); end ;@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: org/jruby/RubyModule.java:2303:in `module_eval'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/actionpack-3.2.13/lib/action_view/template.rb:297:in `compile'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/actionpack-3.2.13/lib/action_view/template.rb:244:in `compile!'
+org/jruby/ext/thread/Mutex.java:149:in `synchronize'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/actionpack-3.2.13/lib/action_view/template.rb:232:in `compile!'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/actionpack-3.2.13/lib/action_view/template.rb:144:in `render'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/activesupport-3.2.13/lib/active_support/notifications.rb:125:in `instrument'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/actionpack-3.2.13/lib/action_view/template.rb:143:in `render'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/actionpack-3.2.13/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/activesupport-3.2.13/lib/active_support/notifications.rb:123:in `instrument'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/activesupport-3.2.13/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/activesupport-3.2.13/lib/active_support/notifications/instrumenter.rb:19:in `instrument'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/activesupport-3.2.13/lib/active_support/notifications.rb:123:in `instrument'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/actionpack-3.2.13/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:46:in `render_template'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:18:in `render'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/actionpack-3.2.13/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/actionpack-3.2.13/lib/action_view/renderer/renderer.rb:17:in `render'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/actionpack-3.2.13/lib/abstract_controller/rendering.rb:110:in `_render_template'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/actionpack-3.2.13/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/actionpack-3.2.13/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/actionpack-3.2.13/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/actionpack-3.2.13/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/actionpack-3.2.13/lib/abstract_controller/rendering.rb:88:in `render'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/actionpack-3.2.13/lib/action_controller/metal/rendering.rb:16:in `render'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/activesupport-3.2.13/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Users/Sueno/.rvm/rubies/jruby-1.7.3/lib/ruby/1.9/benchmark.rb:295:in `realtime'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/activesupport-3.2.13/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/activerecord-3.2.13/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/actionpack-3.2.13/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/actionpack-3.2.13/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/actionpack-3.2.13/lib/abstract_controller/base.rb:167:in `process_action'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/actionpack-3.2.13/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/actionpack-3.2.13/lib/abstract_controller/callbacks.rb:18:in `process_action'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:417:in `_run__530710610__process_action__758521506__callbacks'
+org/jruby/RubyBasicObject.java:1677:in `__send__'
+org/jruby/RubyKernel.java:2103:in `send'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:405:in `__run_callback'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:390:in `_run_process_action_callbacks'
+org/jruby/RubyBasicObject.java:1683:in `__send__'
+org/jruby/RubyKernel.java:2107:in `send'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/actionpack-3.2.13/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/actionpack-3.2.13/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/activesupport-3.2.13/lib/active_support/notifications.rb:123:in `instrument'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/activesupport-3.2.13/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/activesupport-3.2.13/lib/active_support/notifications/instrumenter.rb:19:in `instrument'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/activesupport-3.2.13/lib/active_support/notifications.rb:123:in `instrument'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/actionpack-3.2.13/lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/activerecord-3.2.13/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/actionpack-3.2.13/lib/abstract_controller/base.rb:121:in `process'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/actionpack-3.2.13/lib/abstract_controller/rendering.rb:45:in `process'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/actionpack-3.2.13/lib/action_controller/metal.rb:203:in `dispatch'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/actionpack-3.2.13/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/actionpack-3.2.13/lib/action_controller/metal.rb:246:in `action'
+org/jruby/RubyProc.java:249:in `call'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:36:in `call'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/journey-1.0.4/lib/journey/router.rb:68:in `call'
+org/jruby/RubyArray.java:1613:in `each'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/journey-1.0.4/lib/journey/router.rb:56:in `call'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:612:in `call'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/actionpack-3.2.13/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/rack-1.4.5/lib/rack/etag.rb:23:in `call'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/rack-1.4.5/lib/rack/conditionalget.rb:25:in `call'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/actionpack-3.2.13/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/actionpack-3.2.13/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/actionpack-3.2.13/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:210:in `context'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:205:in `call'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/actionpack-3.2.13/lib/action_dispatch/middleware/cookies.rb:341:in `call'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/activerecord-3.2.13/lib/active_record/query_cache.rb:64:in `call'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/activerecord-3.2.13/lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/actionpack-3.2.13/lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:408:in `_run__115423514__call__650389508__callbacks'
+org/jruby/RubyBasicObject.java:1677:in `__send__'
+org/jruby/RubyKernel.java:2103:in `send'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:405:in `__run_callback'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:390:in `_run_call_callbacks'
+org/jruby/RubyBasicObject.java:1677:in `__send__'
+org/jruby/RubyKernel.java:2103:in `send'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/actionpack-3.2.13/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/actionpack-3.2.13/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/actionpack-3.2.13/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/actionpack-3.2.13/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/actionpack-3.2.13/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/railties-3.2.13/lib/rails/rack/logger.rb:32:in `call_app'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/railties-3.2.13/lib/rails/rack/logger.rb:16:in `call'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/activesupport-3.2.13/lib/active_support/tagged_logging.rb:22:in `tagged'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/railties-3.2.13/lib/rails/rack/logger.rb:16:in `call'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/actionpack-3.2.13/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/rack-1.4.5/lib/rack/methodoverride.rb:21:in `call'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/rack-1.4.5/lib/rack/runtime.rb:17:in `call'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/activesupport-3.2.13/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/rack-1.4.5/lib/rack/lock.rb:15:in `call'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/actionpack-3.2.13/lib/action_dispatch/middleware/static.rb:63:in `call'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/railties-3.2.13/lib/rails/engine.rb:479:in `call'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/railties-3.2.13/lib/rails/application.rb:223:in `call'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/rack-1.4.5/lib/rack/content_length.rb:14:in `call'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/railties-3.2.13/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/Sueno/.rvm/gems/jruby-1.7.3/gems/rack-1.4.5/lib/rack/handler/webrick.rb:59:in `service'
+/Users/Sueno/.rvm/rubies/jruby-1.7.3/lib/ruby/1.9/webrick/httpserver.rb:138:in `service'
+/Users/Sueno/.rvm/rubies/jruby-1.7.3/lib/ruby/1.9/webrick/httpserver.rb:94:in `run'
+/Users/Sueno/.rvm/rubies/jruby-1.7.3/lib/ruby/1.9/webrick/httpserver.rb:72:in `run'
+/Users/Sueno/.rvm/rubies/jruby-1.7.3/lib/ruby/1.9/webrick/server.rb:191:in `start_thread'
+/Users/Sueno/.rvm/rubies/jruby-1.7.3/lib/ruby/1.9/webrick/server.rb:181:in `start_thread'
+  Rendered funds/show.html.erb within layouts/application (35.0ms)
+Completed 500 Internal Server Error in 121ms
+
+ActionView::Template::Error (/Users/Sueno/Documents/rails_project/whirr/fintechhack/app/views/funds/show.html.erb:20: syntax error, unexpected kEND
+
+');		 end 
+        ^):
+    17: 				<td><%= f.stock_price ? f.stock_price : "--"  %></td>
+    18: 				<td><%= f.total_shares ? f.total_shares : "--" %></td>
+    19: 			</tr>
+    20: 		<% end %>
+    21: 	</table>
+    22: <% end %>
+  org/jruby/RubyModule.java:2303:in `module_eval'
+  actionpack (3.2.13) lib/action_view/template.rb:297:in `compile'
+  actionpack (3.2.13) lib/action_view/template.rb:244:in `compile!'
+  org/jruby/ext/thread/Mutex.java:149:in `synchronize'
+  actionpack (3.2.13) lib/action_view/template.rb:232:in `compile!'
+  actionpack (3.2.13) lib/action_view/template.rb:144:in `render'
+  activesupport (3.2.13) lib/active_support/notifications.rb:125:in `instrument'
+  actionpack (3.2.13) lib/action_view/template.rb:143:in `render'
+  actionpack (3.2.13) lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+  actionpack (3.2.13) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `instrument'
+  activesupport (3.2.13) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.13) lib/active_support/notifications/instrumenter.rb:19:in `instrument'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.13) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (3.2.13) lib/action_view/renderer/template_renderer.rb:46:in `render_template'
+  actionpack (3.2.13) lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+  actionpack (3.2.13) lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+  actionpack (3.2.13) lib/action_view/renderer/template_renderer.rb:18:in `render'
+  actionpack (3.2.13) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.13) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.13) lib/abstract_controller/rendering.rb:110:in `_render_template'
+  actionpack (3.2.13) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.13) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.13) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.13) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.13) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.13) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  activesupport (3.2.13) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  /Users/Sueno/.rvm/rubies/jruby-1.7.3/lib/ruby/1.9/benchmark.rb:295:in `realtime'
+  activesupport (3.2.13) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.13) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.13) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.13) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (3.2.13) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.13) lib/abstract_controller/callbacks.rb:18:in `process_action'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:417:in `_run__530710610__process_action__758521506__callbacks'
+  org/jruby/RubyBasicObject.java:1677:in `__send__'
+  org/jruby/RubyKernel.java:2103:in `send'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:390:in `_run_process_action_callbacks'
+  org/jruby/RubyBasicObject.java:1683:in `__send__'
+  org/jruby/RubyKernel.java:2107:in `send'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `instrument'
+  activesupport (3.2.13) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.13) lib/active_support/notifications/instrumenter.rb:19:in `instrument'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.13) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.13) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.13) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.13) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.13) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.13) lib/action_controller/metal.rb:246:in `action'
+  org/jruby/RubyProc.java:249:in `call'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `call'
+  org/jruby/RubyArray.java:1613:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:612:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.13) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:408:in `_run__115423514__call__650389508__callbacks'
+  org/jruby/RubyBasicObject.java:1677:in `__send__'
+  org/jruby/RubyKernel.java:2103:in `send'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:390:in `_run_call_callbacks'
+  org/jruby/RubyBasicObject.java:1677:in `__send__'
+  org/jruby/RubyKernel.java:2103:in `send'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/Sueno/.rvm/rubies/jruby-1.7.3/lib/ruby/1.9/webrick/httpserver.rb:138:in `service'
+  /Users/Sueno/.rvm/rubies/jruby-1.7.3/lib/ruby/1.9/webrick/httpserver.rb:94:in `run'
+  /Users/Sueno/.rvm/rubies/jruby-1.7.3/lib/ruby/1.9/webrick/httpserver.rb:72:in `run'
+  /Users/Sueno/.rvm/rubies/jruby-1.7.3/lib/ruby/1.9/webrick/server.rb:191:in `start_thread'
+  /Users/Sueno/.rvm/rubies/jruby-1.7.3/lib/ruby/1.9/webrick/server.rb:181:in `start_thread'
+
+
+  Rendered /Users/Sueno/.rvm/gems/jruby-1.7.3/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.0ms)
+  Rendered /Users/Sueno/.rvm/gems/jruby-1.7.3/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (42.0ms)
+  Rendered /Users/Sueno/.rvm/gems/jruby-1.7.3/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (66.0ms)
+
+
+Started GET "/funds/1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:25:52 -0400
+Processing by FundsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFund Load (0.0ms)[0m  [1mSELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "flows" WHERE "flows"."fund_id" = 1
+  [1m[36mFlow Load (2.0ms)[0m  [1mSELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 ORDER BY flows.day[0m
+  Rendered funds/show.html.erb within layouts/application (353.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (3.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 774ms (Views: 767.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:25:53 -0400
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/flows.css?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:25:53 -0400
+Served asset /flows.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:25:53 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:25:53 -0400
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:25:53 -0400
+Served asset /custom.css - 304 Not Modified (18ms)
+
+
+Started GET "/assets/funds.css?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:25:53 -0400
+Served asset /funds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:25:53 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:25:53 -0400
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:25:53 -0400
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:25:53 -0400
+Served asset /bootstrap-carousel.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:25:53 -0400
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:25:53 -0400
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:25:53 -0400
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:25:53 -0400
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:25:53 -0400
+Served asset /bootstrap-alert.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:25:53 -0400
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:25:53 -0400
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:25:53 -0400
+Served asset /bootstrap-tooltip.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/funds.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:25:53 -0400
+Served asset /funds.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:25:53 -0400
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:25:53 -0400
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:25:53 -0400
+Served asset /bootstrap.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/flows.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:25:53 -0400
+Served asset /flows.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:25:53 -0400
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/funds/1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:26:01 -0400
+Processing by FundsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mFund Load (0.0ms)[0m  SELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "flows" WHERE "flows"."fund_id" = 1[0m
+  [1m[35mFlow Load (2.0ms)[0m  SELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 ORDER BY flows.day
+  Rendered funds/show.html.erb within layouts/application (85.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 442ms (Views: 435.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/flows.css?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:26:01 -0400
+Served asset /flows.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:26:01 -0400
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:26:01 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/funds.css?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:26:01 -0400
+Served asset /funds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:26:01 -0400
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:26:01 -0400
+Served asset /custom.css - 304 Not Modified (23ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:26:01 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:26:01 -0400
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:26:01 -0400
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:26:01 -0400
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:26:01 -0400
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:26:01 -0400
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:26:02 -0400
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:26:02 -0400
+Served asset /bootstrap-tab.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:26:02 -0400
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:26:02 -0400
+Served asset /bootstrap-collapse.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:26:02 -0400
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:26:02 -0400
+Served asset /bootstrap-modal.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:26:02 -0400
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:26:02 -0400
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:26:02 -0400
+Served asset /bootstrap.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/flows.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:26:02 -0400
+Served asset /flows.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/funds.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:26:02 -0400
+Served asset /funds.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:26:02 -0400
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/funds/1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:26:58 -0400
+Processing by FundsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFund Load (1.0ms)[0m  [1mSELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "flows" WHERE "flows"."fund_id" = 1
+  [1m[36mFlow Load (2.0ms)[0m  [1mSELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 ORDER BY flows.day[0m
+  Rendered funds/show.html.erb within layouts/application (67.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (5.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 767ms (Views: 756.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:26:59 -0400
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/custom.css?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:26:59 -0400
+Served asset /custom.css - 304 Not Modified (19ms)
+
+
+Started GET "/assets/flows.css?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:26:59 -0400
+Served asset /flows.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/funds.css?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:26:59 -0400
+Served asset /funds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:26:59 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:26:59 -0400
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:26:59 -0400
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:26:59 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:26:59 -0400
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:26:59 -0400
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:26:59 -0400
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:26:59 -0400
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:26:59 -0400
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:26:59 -0400
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:26:59 -0400
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:26:59 -0400
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:26:59 -0400
+Served asset /bootstrap-tab.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:26:59 -0400
+Served asset /bootstrap.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:26:59 -0400
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:26:59 -0400
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:26:59 -0400
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flows.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:26:59 -0400
+Served asset /flows.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:26:59 -0400
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/funds.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:26:59 -0400
+Served asset /funds.js - 304 Not Modified (0ms)
+
+
+Started GET "/funds/1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:28:04 -0400
+Processing by FundsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mFund Load (1.0ms)[0m  SELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "flows" WHERE "flows"."fund_id" = 1[0m
+  [1m[35mFlow Load (3.0ms)[0m  SELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 ORDER BY flows.day
+  Rendered funds/show.html.erb within layouts/application (367.0ms)
+Completed 500 Internal Server Error in 413ms
+
+ActionView::Template::Error (undefined method `number' for #<#<Class:0x4811a6da>:0x7ee1572c>):
+    13: 			<tr>
+    14: 				<td></td>
+    15: 				<td><%= f.day %></td>
+    16: 				<td><%= number(f.cashflow, delimiter: ",", precision: 0) %></td>
+    17: 				<td><%= f.stock_price ? f.stock_price : "--"  %></td>
+    18: 				<td><%= f.total_shares ? f.total_shares : "--" %></td>
+    19: 			</tr>
+  app/views/funds/show.html.erb:16:in `_app_views_funds_show_html_erb___781587980_15176'
+  app/views/funds/show.html.erb:12:in `_app_views_funds_show_html_erb___781587980_15176'
+
+
+  Rendered /Users/Sueno/.rvm/gems/jruby-1.7.3/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.0ms)
+  Rendered /Users/Sueno/.rvm/gems/jruby-1.7.3/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.0ms)
+  Rendered /Users/Sueno/.rvm/gems/jruby-1.7.3/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (37.0ms)
+
+
+Started GET "/funds/1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:28:16 -0400
+Processing by FundsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFund Load (1.0ms)[0m  [1mSELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "flows" WHERE "flows"."fund_id" = 1
+  [1m[36mFlow Load (2.0ms)[0m  [1mSELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 ORDER BY flows.day[0m
+  Rendered funds/show.html.erb within layouts/application (68.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (70.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 565ms (Views: 558.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:28:17 -0400
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/custom.css?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:28:17 -0400
+Served asset /custom.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/flows.css?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:28:17 -0400
+Served asset /flows.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:28:17 -0400
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:28:17 -0400
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/funds.css?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:28:17 -0400
+Served asset /funds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:28:17 -0400
+Served asset /application.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:28:17 -0400
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:28:17 -0400
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:28:17 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:28:17 -0400
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:28:17 -0400
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:28:17 -0400
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:28:17 -0400
+Served asset /bootstrap-collapse.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:28:17 -0400
+Served asset /bootstrap-dropdown.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:28:17 -0400
+Served asset /bootstrap-popover.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:28:17 -0400
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:28:17 -0400
+Served asset /bootstrap.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:28:17 -0400
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flows.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:28:17 -0400
+Served asset /flows.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/funds.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:28:17 -0400
+Served asset /funds.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:28:17 -0400
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:28:17 -0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:28:17 -0400
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/funds/1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:28:26 -0400
+Processing by FundsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mFund Load (1.0ms)[0m  SELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "flows" WHERE "flows"."fund_id" = 1[0m
+  [1m[35mFlow Load (2.0ms)[0m  SELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 ORDER BY flows.day
+  Rendered funds/show.html.erb within layouts/application (58.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 437ms (Views: 428.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-06 17:28:26 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:28:26 -0400
+Served asset /custom.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/application.css?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:28:26 -0400
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-04-06 17:28:27 -0400
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flows.css?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:28:27 -0400
+Served asset /flows.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/funds.css?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 17:28:27 -0400
+Served asset /funds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-06 17:28:27 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-04-06 17:28:27 -0400
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-04-06 17:28:27 -0400
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-04-06 17:28:27 -0400
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-04-06 17:28:27 -0400
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-04-06 17:28:27 -0400
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-04-06 17:28:27 -0400
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-04-06 17:28:27 -0400
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-04-06 17:28:27 -0400
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-04-06 17:28:27 -0400
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-04-06 17:28:27 -0400
+Served asset /bootstrap-tab.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-04-06 17:28:27 -0400
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-04-06 17:28:27 -0400
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-04-06 17:28:27 -0400
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-06 17:28:27 -0400
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/flows.js?body=1" for 127.0.0.1 at 2013-04-06 17:28:27 -0400
+Served asset /flows.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-04-06 17:28:27 -0400
+Served asset /bootstrap.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/funds.js?body=1" for 127.0.0.1 at 2013-04-06 17:28:27 -0400
+Served asset /funds.js - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-06 17:40:03 -0400
+Processing by FundsController#index as HTML
+  [1m[36mFund Load (0.0ms)[0m  [1mSELECT "funds".* FROM "funds" ORDER BY name[0m
+  Rendered funds/index.html.erb within layouts/application (67.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 455ms (Views: 454.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-06 17:40:04 -0400
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-06 17:40:04 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-04-06 17:40:04 -0400
+Served asset /custom.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/flows.css?body=1" for 127.0.0.1 at 2013-04-06 17:40:04 -0400
+Served asset /flows.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-04-06 17:40:04 -0400
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/funds.css?body=1" for 127.0.0.1 at 2013-04-06 17:40:04 -0400
+Served asset /funds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-04-06 17:40:04 -0400
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-06 17:40:04 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-04-06 17:40:04 -0400
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-04-06 17:40:04 -0400
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-04-06 17:40:04 -0400
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-04-06 17:40:04 -0400
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-04-06 17:40:04 -0400
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-04-06 17:40:04 -0400
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flows.js?body=1" for 127.0.0.1 at 2013-04-06 17:40:04 -0400
+Served asset /flows.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-04-06 17:40:04 -0400
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-04-06 17:40:04 -0400
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-04-06 17:40:04 -0400
+Served asset /bootstrap-popover.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-04-06 17:40:04 -0400
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/funds.js?body=1" for 127.0.0.1 at 2013-04-06 17:40:04 -0400
+Served asset /funds.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-06 17:40:04 -0400
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-04-06 17:40:04 -0400
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-04-06 17:40:04 -0400
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-04-06 17:40:04 -0400
+Served asset /bootstrap-affix.js - 304 Not Modified (1ms)
+
+
+Started POST "/flows/import" for 127.0.0.1 at 2013-04-06 17:40:10 -0400
+Processing by FlowsController#import as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dfknGy0k2uxL1DaXJyuzJ44hWEocU3nV76ido4pWOVQ=", "file"=>#<ActionDispatch::Http::UploadedFile:0x3058b2a9 @original_filename="Cash Flows - Fund 1.csv", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"Cash Flows - Fund 1.csv\"\r\nContent-Type: text/csv\r\n", @tempfile=#<Tempfile:/var/folders/kt/0__cbz4j42s7yhw1ssclc9lr0000gn/T/RackMultipart.79918.60749>, @content_type="text/csv">, "commit"=>"Import"}
+  [1m[35mFlow Load (1.0ms)[0m  SELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2003-08-18' ORDER BY flows.day LIMIT 1
+  [1m[36mFund Load (0.0ms)[0m  [1mSELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1[0m
+  [1m[35m (19.0ms)[0m  UPDATE "flows" SET "cashflow" = -16923.0, "updated_at" = '2013-04-06 21:40:10.150000' WHERE "flows"."id" = 1
+  [1m[36mFlow Load (11.0ms)[0m  [1mSELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2003-10-20' ORDER BY flows.day LIMIT 1[0m
+  [1m[35mFund Load (0.0ms)[0m  SELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mUPDATE "flows" SET "cashflow" = -41723.0, "updated_at" = '2013-04-06 21:40:10.218000' WHERE "flows"."id" = 2[0m
+  [1m[35mFlow Load (0.0ms)[0m  SELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2004-02-17' ORDER BY flows.day LIMIT 1
+  [1m[36mFund Load (0.0ms)[0m  [1mSELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  UPDATE "flows" SET "cashflow" = -91323.0, "updated_at" = '2013-04-06 21:40:10.242000' WHERE "flows"."id" = 3
+  [1m[36mFlow Load (0.0ms)[0m  [1mSELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2004-04-13' ORDER BY flows.day LIMIT 1[0m
+  [1m[35mFund Load (1.0ms)[0m  SELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1
+  [1m[36m (1.0ms)[0m  [1mUPDATE "flows" SET "cashflow" = -53323.0, "updated_at" = '2013-04-06 21:40:10.265000' WHERE "flows"."id" = 4[0m
+  [1m[35mFlow Load (1.0ms)[0m  SELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2004-07-02' ORDER BY flows.day LIMIT 1
+  [1m[36mFund Load (0.0ms)[0m  [1mSELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  UPDATE "flows" SET "cashflow" = -41323.0, "updated_at" = '2013-04-06 21:40:10.291000' WHERE "flows"."id" = 5
+  [1m[36mFlow Load (1.0ms)[0m  [1mSELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2004-08-21' ORDER BY flows.day LIMIT 1[0m
+  [1m[35mFund Load (1.0ms)[0m  SELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1
+  [1m[36m (1.0ms)[0m  [1mUPDATE "flows" SET "cashflow" = -45323.0, "updated_at" = '2013-04-06 21:40:10.329000' WHERE "flows"."id" = 6[0m
+  [1m[35mFlow Load (1.0ms)[0m  SELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2004-10-08' ORDER BY flows.day LIMIT 1
+  [1m[36mFund Load (0.0ms)[0m  [1mSELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  UPDATE "flows" SET "cashflow" = -67323.0, "updated_at" = '2013-04-06 21:40:10.351000' WHERE "flows"."id" = 7
+  [1m[36mFlow Load (1.0ms)[0m  [1mSELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2004-11-12' ORDER BY flows.day LIMIT 1[0m
+  [1m[35mFund Load (0.0ms)[0m  SELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1
+  [1m[36m (1.0ms)[0m  [1mUPDATE "flows" SET "cashflow" = -73323.0, "updated_at" = '2013-04-06 21:40:10.370000' WHERE "flows"."id" = 8[0m
+  [1m[35mFlow Load (1.0ms)[0m  SELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2005-01-04' ORDER BY flows.day LIMIT 1
+  [1m[36mFund Load (1.0ms)[0m  [1mSELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  UPDATE "flows" SET "cashflow" = -85323.0, "updated_at" = '2013-04-06 21:40:10.390000' WHERE "flows"."id" = 9
+  [1m[36mFlow Load (1.0ms)[0m  [1mSELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2005-02-17' ORDER BY flows.day LIMIT 1[0m
+  [1m[35mFund Load (0.0ms)[0m  SELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mUPDATE "flows" SET "cashflow" = -41348.0, "updated_at" = '2013-04-06 21:40:10.409000' WHERE "flows"."id" = 10[0m
+  [1m[35mFlow Load (0.0ms)[0m  SELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2005-03-28' ORDER BY flows.day LIMIT 1
+  [1m[36mFund Load (0.0ms)[0m  [1mSELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  UPDATE "flows" SET "cashflow" = -71323.0, "updated_at" = '2013-04-06 21:40:10.427000' WHERE "flows"."id" = 11
+  [1m[36mFlow Load (1.0ms)[0m  [1mSELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2005-06-23' ORDER BY flows.day LIMIT 1[0m
+  [1m[35mFund Load (1.0ms)[0m  SELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1
+  [1m[36m (1.0ms)[0m  [1mUPDATE "flows" SET "cashflow" = -47323.0, "updated_at" = '2013-04-06 21:40:10.445000' WHERE "flows"."id" = 12[0m
+  [1m[35mFlow Load (1.0ms)[0m  SELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2005-08-08' ORDER BY flows.day LIMIT 1
+  [1m[36mFund Load (0.0ms)[0m  [1mSELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  UPDATE "flows" SET "cashflow" = -125323.0, "updated_at" = '2013-04-06 21:40:10.464000' WHERE "flows"."id" = 13
+  [1m[36mFlow Load (1.0ms)[0m  [1mSELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2005-10-21' ORDER BY flows.day LIMIT 1[0m
+  [1m[35mFund Load (0.0ms)[0m  SELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1
+  [1m[36m (1.0ms)[0m  [1mUPDATE "flows" SET "cashflow" = -97323.0, "updated_at" = '2013-04-06 21:40:10.482000' WHERE "flows"."id" = 14[0m
+  [1m[35mFlow Load (1.0ms)[0m  SELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2006-01-20' ORDER BY flows.day LIMIT 1
+  [1m[36mFund Load (0.0ms)[0m  [1mSELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  UPDATE "flows" SET "cashflow" = -71323.0, "updated_at" = '2013-04-06 21:40:10.499000' WHERE "flows"."id" = 15
+  [1m[36mFlow Load (1.0ms)[0m  [1mSELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2006-02-15' ORDER BY flows.day LIMIT 1[0m
+  [1m[35mFund Load (0.0ms)[0m  SELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mUPDATE "flows" SET "cashflow" = -71323.0, "updated_at" = '2013-04-06 21:40:10.518000' WHERE "flows"."id" = 16[0m
+  [1m[35mFlow Load (0.0ms)[0m  SELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2006-04-21' ORDER BY flows.day LIMIT 1
+  [1m[36mFund Load (0.0ms)[0m  [1mSELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  UPDATE "flows" SET "cashflow" = -51323.0, "updated_at" = '2013-04-06 21:40:10.537000' WHERE "flows"."id" = 17
+  [1m[36mFlow Load (1.0ms)[0m  [1mSELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2006-06-15' ORDER BY flows.day LIMIT 1[0m
+  [1m[35mFund Load (0.0ms)[0m  SELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1
+  [1m[36m (1.0ms)[0m  [1mUPDATE "flows" SET "cashflow" = -131323.0, "updated_at" = '2013-04-06 21:40:10.556000' WHERE "flows"."id" = 18[0m
+  [1m[35mFlow Load (0.0ms)[0m  SELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2006-08-31' ORDER BY flows.day LIMIT 1
+  [1m[36mFund Load (1.0ms)[0m  [1mSELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  UPDATE "flows" SET "cashflow" = -101323.0, "updated_at" = '2013-04-06 21:40:10.576000' WHERE "flows"."id" = 19
+  [1m[36mFlow Load (1.0ms)[0m  [1mSELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2006-09-13' ORDER BY flows.day LIMIT 1[0m
+  [1m[35mFund Load (0.0ms)[0m  SELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mUPDATE "flows" SET "cashflow" = -91323.0, "updated_at" = '2013-04-06 21:40:10.594000' WHERE "flows"."id" = 20[0m
+  [1m[35mFlow Load (0.0ms)[0m  SELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2006-12-12' ORDER BY flows.day LIMIT 1
+  [1m[36mFund Load (1.0ms)[0m  [1mSELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  UPDATE "flows" SET "cashflow" = 131323.0, "updated_at" = '2013-04-06 21:40:10.612000' WHERE "flows"."id" = 21
+  [1m[36mFlow Load (0.0ms)[0m  [1mSELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2006-12-13' ORDER BY flows.day LIMIT 1[0m
+  [1m[35mFund Load (0.0ms)[0m  SELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mUPDATE "flows" SET "cashflow" = 147061.1, "updated_at" = '2013-04-06 21:40:10.630000' WHERE "flows"."id" = 22[0m
+  [1m[35mFlow Load (0.0ms)[0m  SELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2007-01-16' ORDER BY flows.day LIMIT 1
+  [1m[36mFund Load (0.0ms)[0m  [1mSELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  UPDATE "flows" SET "cashflow" = -41323.0, "updated_at" = '2013-04-06 21:40:10.683000' WHERE "flows"."id" = 23
+  [1m[36mFlow Load (1.0ms)[0m  [1mSELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2007-03-27' ORDER BY flows.day LIMIT 1[0m
+  [1m[35mFund Load (0.0ms)[0m  SELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1
+  [1m[36m (1.0ms)[0m  [1mUPDATE "flows" SET "cashflow" = -71323.0, "updated_at" = '2013-04-06 21:40:10.725000' WHERE "flows"."id" = 24[0m
+  [1m[35mFlow Load (0.0ms)[0m  SELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2007-05-21' ORDER BY flows.day LIMIT 1
+  [1m[36mFund Load (0.0ms)[0m  [1mSELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  UPDATE "flows" SET "cashflow" = -41323.0, "updated_at" = '2013-04-06 21:40:10.749000' WHERE "flows"."id" = 25
+  [1m[36mFlow Load (1.0ms)[0m  [1mSELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2007-07-03' ORDER BY flows.day LIMIT 1[0m
+  [1m[35mFund Load (0.0ms)[0m  SELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mUPDATE "flows" SET "cashflow" = -41323.0, "updated_at" = '2013-04-06 21:40:10.767000' WHERE "flows"."id" = 26[0m
+  [1m[35mFlow Load (0.0ms)[0m  SELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2007-09-17' ORDER BY flows.day LIMIT 1
+  [1m[36mFund Load (0.0ms)[0m  [1mSELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  UPDATE "flows" SET "cashflow" = -135323.0, "updated_at" = '2013-04-06 21:40:10.787000' WHERE "flows"."id" = 27
+  [1m[36mFlow Load (1.0ms)[0m  [1mSELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2007-10-02' ORDER BY flows.day LIMIT 1[0m
+  [1m[35mFund Load (0.0ms)[0m  SELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1
+  [1m[36m (13.0ms)[0m  [1mUPDATE "flows" SET "cashflow" = 24819.63, "updated_at" = '2013-04-06 21:40:10.814000' WHERE "flows"."id" = 28[0m
+  [1m[35mFlow Load (0.0ms)[0m  SELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2007-12-04' ORDER BY flows.day LIMIT 1
+  [1m[36mFund Load (1.0ms)[0m  [1mSELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  UPDATE "flows" SET "cashflow" = -107323.0, "updated_at" = '2013-04-06 21:40:10.853000' WHERE "flows"."id" = 29
+  [1m[36mFlow Load (1.0ms)[0m  [1mSELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2008-01-23' ORDER BY flows.day LIMIT 1[0m
+  [1m[35mFund Load (1.0ms)[0m  SELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1
+  [1m[36m (1.0ms)[0m  [1mUPDATE "flows" SET "cashflow" = -31323.0, "updated_at" = '2013-04-06 21:40:10.871000' WHERE "flows"."id" = 30[0m
+  [1m[35mFlow Load (1.0ms)[0m  SELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2008-03-26' ORDER BY flows.day LIMIT 1
+  [1m[36mFund Load (0.0ms)[0m  [1mSELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  UPDATE "flows" SET "cashflow" = -51323.0, "updated_at" = '2013-04-06 21:40:10.889000' WHERE "flows"."id" = 31
+  [1m[36mFlow Load (0.0ms)[0m  [1mSELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2008-06-03' ORDER BY flows.day LIMIT 1[0m
+  [1m[35mFund Load (0.0ms)[0m  SELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mUPDATE "flows" SET "cashflow" = -81323.0, "updated_at" = '2013-04-06 21:40:10.909000' WHERE "flows"."id" = 32[0m
+  [1m[35mFlow Load (1.0ms)[0m  SELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2008-06-03' ORDER BY flows.day LIMIT 1
+  [1m[36mFund Load (0.0ms)[0m  [1mSELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  UPDATE "flows" SET "cashflow" = 56734.56, "updated_at" = '2013-04-06 21:40:10.927000' WHERE "flows"."id" = 32
+  [1m[36mFlow Load (1.0ms)[0m  [1mSELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2008-07-09' ORDER BY flows.day LIMIT 1[0m
+  [1m[35mFund Load (1.0ms)[0m  SELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1
+  [1m[36m (1.0ms)[0m  [1mUPDATE "flows" SET "cashflow" = -41323.0, "updated_at" = '2013-04-06 21:40:10.946000' WHERE "flows"."id" = 33[0m
+  [1m[35mFlow Load (0.0ms)[0m  SELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2008-10-06' ORDER BY flows.day LIMIT 1
+  [1m[36mFund Load (0.0ms)[0m  [1mSELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  UPDATE "flows" SET "cashflow" = -61323.0, "updated_at" = '2013-04-06 21:40:10.965000' WHERE "flows"."id" = 34
+  [1m[36mFlow Load (0.0ms)[0m  [1mSELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2009-03-26' ORDER BY flows.day LIMIT 1[0m
+  [1m[35mFund Load (1.0ms)[0m  SELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mUPDATE "flows" SET "cashflow" = -51323.0, "updated_at" = '2013-04-06 21:40:10.984000' WHERE "flows"."id" = 35[0m
+  [1m[35mFlow Load (1.0ms)[0m  SELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2009-04-29' ORDER BY flows.day LIMIT 1
+  [1m[36mFund Load (1.0ms)[0m  [1mSELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  UPDATE "flows" SET "cashflow" = -37323.0, "updated_at" = '2013-04-06 21:40:11.017000' WHERE "flows"."id" = 36
+  [1m[36mFlow Load (1.0ms)[0m  [1mSELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2009-09-04' ORDER BY flows.day LIMIT 1[0m
+  [1m[35mFund Load (0.0ms)[0m  SELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mUPDATE "flows" SET "cashflow" = -35323.0, "updated_at" = '2013-04-06 21:40:11.048000' WHERE "flows"."id" = 37[0m
+  [1m[35mFlow Load (4.0ms)[0m  SELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2009-11-11' ORDER BY flows.day LIMIT 1
+  [1m[36mFund Load (0.0ms)[0m  [1mSELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  UPDATE "flows" SET "cashflow" = 81323.0, "updated_at" = '2013-04-06 21:40:11.072000' WHERE "flows"."id" = 38
+  [1m[36mFlow Load (1.0ms)[0m  [1mSELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2009-11-11' ORDER BY flows.day LIMIT 1[0m
+  [1m[35mFund Load (0.0ms)[0m  SELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mUPDATE "flows" SET "cashflow" = 87082.55, "updated_at" = '2013-04-06 21:40:11.096000' WHERE "flows"."id" = 38[0m
+  [1m[35mFlow Load (0.0ms)[0m  SELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2010-01-06' ORDER BY flows.day LIMIT 1
+  [1m[36mFund Load (0.0ms)[0m  [1mSELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  UPDATE "flows" SET "cashflow" = -45323.0, "updated_at" = '2013-04-06 21:40:11.122000' WHERE "flows"."id" = 39
+  [1m[36mFlow Load (0.0ms)[0m  [1mSELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2010-03-15' ORDER BY flows.day LIMIT 1[0m
+  [1m[35mFund Load (1.0ms)[0m  SELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mUPDATE "flows" SET "cashflow" = -31323.0, "updated_at" = '2013-04-06 21:40:11.139000' WHERE "flows"."id" = 40[0m
+  [1m[35mFlow Load (0.0ms)[0m  SELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2010-03-15' ORDER BY flows.day LIMIT 1
+  [1m[36mFund Load (0.0ms)[0m  [1mSELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  UPDATE "flows" SET "cashflow" = 185700.64, "updated_at" = '2013-04-06 21:40:11.158000' WHERE "flows"."id" = 40
+  [1m[36mFlow Load (0.0ms)[0m  [1mSELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2010-04-23' ORDER BY flows.day LIMIT 1[0m
+  [1m[35mFund Load (0.0ms)[0m  SELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1
+  [1m[36m (1.0ms)[0m  [1mUPDATE "flows" SET "cashflow" = -31323.0, "updated_at" = '2013-04-06 21:40:11.178000' WHERE "flows"."id" = 41[0m
+  [1m[35mFlow Load (1.0ms)[0m  SELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2010-07-26' ORDER BY flows.day LIMIT 1
+  [1m[36mFund Load (1.0ms)[0m  [1mSELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  UPDATE "flows" SET "cashflow" = -45323.0, "updated_at" = '2013-04-06 21:40:11.197000' WHERE "flows"."id" = 42
+  [1m[36mFlow Load (0.0ms)[0m  [1mSELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2010-09-15' ORDER BY flows.day LIMIT 1[0m
+  [1m[35mFund Load (0.0ms)[0m  SELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1
+  [1m[36m (1.0ms)[0m  [1mUPDATE "flows" SET "cashflow" = 22881.08, "updated_at" = '2013-04-06 21:40:11.215000' WHERE "flows"."id" = 43[0m
+  [1m[35mFlow Load (0.0ms)[0m  SELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2010-10-25' ORDER BY flows.day LIMIT 1
+  [1m[36mFund Load (0.0ms)[0m  [1mSELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  UPDATE "flows" SET "cashflow" = -37323.0, "updated_at" = '2013-04-06 21:40:11.237000' WHERE "flows"."id" = 44
+  [1m[36mFlow Load (1.0ms)[0m  [1mSELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2011-02-01' ORDER BY flows.day LIMIT 1[0m
+  [1m[35mFund Load (1.0ms)[0m  SELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mUPDATE "flows" SET "cashflow" = -21323.0, "updated_at" = '2013-04-06 21:40:11.302000' WHERE "flows"."id" = 45[0m
+  [1m[35mFlow Load (0.0ms)[0m  SELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2011-04-21' ORDER BY flows.day LIMIT 1
+  [1m[36mFund Load (1.0ms)[0m  [1mSELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  UPDATE "flows" SET "cashflow" = -21323.0, "updated_at" = '2013-04-06 21:40:11.359000' WHERE "flows"."id" = 46
+  [1m[36mFlow Load (1.0ms)[0m  [1mSELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2011-06-17' ORDER BY flows.day LIMIT 1[0m
+  [1m[35mFund Load (0.0ms)[0m  SELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mUPDATE "flows" SET "cashflow" = 144294.69, "updated_at" = '2013-04-06 21:40:11.379000' WHERE "flows"."id" = 47[0m
+  [1m[35mFlow Load (1.0ms)[0m  SELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 AND "flows"."day" = '2011-09-08' ORDER BY flows.day LIMIT 1
+  [1m[36mFund Load (0.0ms)[0m  [1mSELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  UPDATE "flows" SET "cashflow" = 53164.12, "updated_at" = '2013-04-06 21:40:11.397000' WHERE "flows"."id" = 48
+Redirected to http://localhost:3000/
+Completed 302 Found in 1349ms (ActiveRecord: 114.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-06 17:40:11 -0400
+Processing by FundsController#index as HTML
+  [1m[36mFund Load (1.0ms)[0m  [1mSELECT "funds".* FROM "funds" ORDER BY name[0m
+  Rendered funds/index.html.erb within layouts/application (14.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 391ms (Views: 389.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-06 17:40:11 -0400
+Served asset /application.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-04-06 17:40:11 -0400
+Served asset /custom.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/funds.css?body=1" for 127.0.0.1 at 2013-04-06 17:40:11 -0400
+Served asset /funds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-06 17:40:12 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-06 17:40:12 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-04-06 17:40:12 -0400
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-04-06 17:40:12 -0400
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flows.css?body=1" for 127.0.0.1 at 2013-04-06 17:40:12 -0400
+Served asset /flows.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-04-06 17:40:12 -0400
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-04-06 17:40:12 -0400
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-04-06 17:40:12 -0400
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-04-06 17:40:12 -0400
+Served asset /bootstrap-dropdown.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-04-06 17:40:12 -0400
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-04-06 17:40:12 -0400
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-04-06 17:40:12 -0400
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-04-06 17:40:12 -0400
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-04-06 17:40:12 -0400
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-04-06 17:40:12 -0400
+Served asset /bootstrap-typeahead.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-04-06 17:40:12 -0400
+Served asset /bootstrap.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/flows.js?body=1" for 127.0.0.1 at 2013-04-06 17:40:12 -0400
+Served asset /flows.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/funds.js?body=1" for 127.0.0.1 at 2013-04-06 17:40:12 -0400
+Served asset /funds.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-06 17:40:12 -0400
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-04-06 17:40:12 -0400
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-04-06 17:40:12 -0400
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/funds/1" for 127.0.0.1 at 2013-04-06 17:40:16 -0400
+Processing by FundsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mFund Load (0.0ms)[0m  SELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "flows" WHERE "flows"."fund_id" = 1[0m
+  [1m[35mFlow Load (2.0ms)[0m  SELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 ORDER BY flows.day
+  Rendered funds/show.html.erb within layouts/application (65.0ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 412ms (Views: 406.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/flows.css?body=1" for 127.0.0.1 at 2013-04-06 17:40:17 -0400
+Served asset /flows.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-04-06 17:40:17 -0400
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-06 17:40:17 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-06 17:40:17 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-04-06 17:40:17 -0400
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-04-06 17:40:17 -0400
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-04-06 17:40:17 -0400
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-06 17:40:17 -0400
+Served asset /application.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-04-06 17:40:17 -0400
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-04-06 17:40:17 -0400
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-04-06 17:40:17 -0400
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-04-06 17:40:17 -0400
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-04-06 17:40:17 -0400
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-04-06 17:40:18 -0400
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-04-06 17:40:18 -0400
+Served asset /custom.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/funds.css?body=1" for 127.0.0.1 at 2013-04-06 17:40:18 -0400
+Served asset /funds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-04-06 17:40:18 -0400
+Served asset /bootstrap.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-04-06 17:40:18 -0400
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-04-06 17:40:18 -0400
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/funds.js?body=1" for 127.0.0.1 at 2013-04-06 17:40:18 -0400
+Served asset /funds.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-06 17:40:18 -0400
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/flows.js?body=1" for 127.0.0.1 at 2013-04-06 17:40:18 -0400
+Served asset /flows.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-04-06 17:40:18 -0400
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-04-06 17:40:18 -0400
+Served asset /bootstrap-typeahead.js - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-06 17:42:13 -0400
+Processing by FundsController#index as HTML
+  [1m[36mFund Load (1.0ms)[0m  [1mSELECT "funds".* FROM "funds" ORDER BY name[0m
+  Rendered funds/index.html.erb within layouts/application (15.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 365ms (Views: 363.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-04-06 17:42:14 -0400
+Served asset /custom.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/flows.css?body=1" for 127.0.0.1 at 2013-04-06 17:42:14 -0400
+Served asset /flows.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/funds.css?body=1" for 127.0.0.1 at 2013-04-06 17:42:14 -0400
+Served asset /funds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-06 17:42:14 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-06 17:42:14 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-04-06 17:42:14 -0400
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-04-06 17:42:14 -0400
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-06 17:42:14 -0400
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-04-06 17:42:14 -0400
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-04-06 17:42:14 -0400
+Served asset /bootstrap-alert.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-04-06 17:42:14 -0400
+Served asset /bootstrap-button.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-04-06 17:42:14 -0400
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-04-06 17:42:14 -0400
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-04-06 17:42:14 -0400
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-04-06 17:42:14 -0400
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-04-06 17:42:14 -0400
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-04-06 17:42:14 -0400
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/flows.js?body=1" for 127.0.0.1 at 2013-04-06 17:42:14 -0400
+Served asset /flows.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/funds.js?body=1" for 127.0.0.1 at 2013-04-06 17:42:14 -0400
+Served asset /funds.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-04-06 17:42:14 -0400
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-04-06 17:42:14 -0400
+Served asset /bootstrap-tab.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-04-06 17:42:14 -0400
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-04-06 17:42:14 -0400
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-06 17:42:14 -0400
+Served asset /application.js - 304 Not Modified (9ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (1.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type = 'table' AND NOT name = 'sqlite_sequence' AND name = "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  SELECT name FROM sqlite_master WHERE type = 'table' AND NOT name = 'sqlite_sequence' AND name = "schema_migrations"
+  [1m[36m (1.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateFunds (20130406023030)
+Migrating to Addcolstofunds (20130406175351)
+Migrating to CreateFlows (20130406192617)
+Migrating to CreateValuations (20130406214836)
+  [1m[35m (0.0ms)[0m  SELECT sqlite_version(*)
+  [1m[36m (9.0ms)[0m  [1mCREATE TABLE "valuations" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "stock_price" decimal, "fund_id" integer, "day" date, "value" decimal, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130406214836')
+  [1m[36m (0.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type = 'table' AND NOT name = 'sqlite_sequence' AND name = "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (1.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type = 'table' AND NOT name = 'sqlite_sequence'[0m
+  [1m[35m (0.0ms)[0m  SELECT name, sql FROM sqlite_master WHERE tbl_name = "flows" AND type = 'index'
+  [1m[36m (0.0ms)[0m  [1mSELECT name, sql FROM sqlite_master WHERE tbl_name = "funds" AND type = 'index'[0m
+  [1m[35m (0.0ms)[0m  SELECT name, sql FROM sqlite_master WHERE tbl_name = "valuations" AND type = 'index'

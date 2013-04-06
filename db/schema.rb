@@ -11,7 +11,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130406175351) do
+ActiveRecord::Schema.define(:version => 20130406214836) do
+
+  create_table "flows", :force => true do |t|
+    t.date     "day"
+    t.integer  "fund_id"
+    t.decimal  "cashflow"
+    t.decimal  "stock_price"
+    t.decimal  "total_shares"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
 
   create_table "funds", :force => true do |t|
     t.string   "name"
@@ -19,6 +29,15 @@ ActiveRecord::Schema.define(:version => 20130406175351) do
     t.datetime "updated_at", :null => false
     t.string   "fund_type"
     t.string   "ticker"
+  end
+
+  create_table "valuations", :force => true do |t|
+    t.decimal  "stock_price"
+    t.integer  "fund_id"
+    t.date     "day"
+    t.decimal  "value"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
 
 end
