@@ -55,13 +55,7 @@ class FundsController < ApplicationController
   end
 
   def fund_management
-    @fund = Fund.new(params[:fund])
-    if @fund.save
-      flash[:success] = "New fund created!"
-      redirect_to funds_path
-    else
-      render 'new'
-    end
+
   end
 
   def alerts

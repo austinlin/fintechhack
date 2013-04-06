@@ -1,8 +1,13 @@
 <h1>Fund Management</h1>
 
-<h2>Add a Fund</h2>
+<fieldset>
+	
+<h2>Import Cash Flows</h2>
+	<%= form_tag import_flows_path, multipart: true do %>
+		<%= file_field_tag :file %>
+		<%= submit_tag 'Import' %>
+	<% end %>
 
-<%= form_for @fund do |f| %>
-	<%= render 'layouts/error_messages', object: f.object %>
-	<%= render 'fund_fields', f: f %>	
-<% end %>
+<h2>Import Valuations</h2>
+
+</fieldset>
