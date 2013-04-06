@@ -23,6 +23,9 @@ GEM
       arel (~> 3.0.2)
       tzinfo (~> 0.3.29)
     activerecord-jdbc-adapter (1.2.9)
+    activerecord-jdbcpostgresql-adapter (1.2.9)
+      activerecord-jdbc-adapter (~> 1.2.9)
+      jdbc-postgres (>= 9.1, < 9.3)
     activerecord-jdbcsqlite3-adapter (1.2.9)
       activerecord-jdbc-adapter (~> 1.2.9)
       jdbc-sqlite3 (~> 3.7.2)
@@ -47,6 +50,7 @@ GEM
       multi_json (~> 1.0)
     hike (1.2.1)
     i18n (0.6.1)
+    jdbc-postgres (9.2.1002.1)
     jdbc-sqlite3 (3.7.2.1)
     journey (1.0.4)
     jquery-rails (2.2.1)
@@ -60,7 +64,6 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.22)
     multi_json (1.7.2)
-    pg (0.15.0)
     polyglot (0.3.3)
     puma (1.6.3)
       rack (~> 1.2)
@@ -119,11 +122,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  activerecord-jdbcpostgresql-adapter
   activerecord-jdbcsqlite3-adapter
   bootstrap-sass (= 2.1)
   coffee-rails (~> 3.2.1)
   jquery-rails
-  pg
   puma
   rails (= 3.2.13)
   sass-rails (~> 3.2.3)

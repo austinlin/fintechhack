@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '1.9.3', :engine => 'jruby', :engine_version => '1.7.1'
+ruby '1.9.3', :engine => 'jruby', :engine_version => '1.7.3'
 
 gem 'rails', '3.2.13'
 
@@ -14,7 +14,8 @@ group :development, :test do
 end
 
 group :production do
-  gem 'pg'
+  #gem 'pg'
+  gem 'activerecord-jdbcpostgresql-adapter'
   gem 'puma'
 end
 
