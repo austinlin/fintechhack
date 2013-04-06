@@ -1,3 +1,9 @@
+GIT
+  remote: git@github.com:sundbp/bberg.git
+  revision: 82ab763aee507c942d68ca1a133aaa99be3c5e11
+  specs:
+    bberg (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -118,6 +124,7 @@ PLATFORMS
 
 DEPENDENCIES
   activerecord-jdbcsqlite3-adapter
+  bberg!
   bootstrap-sass (= 2.1)
   coffee-rails (~> 3.2.1)
   jquery-rails
