@@ -1,0 +1,12 @@
+<fieldset>
+	<%= f.label :name %>
+	<%= f.text_field :name %>
+
+	<%= f.label :fund_type %>
+	<%= f.select :fund_type, Fund::VALID_FUND_TYPES, {:include_blank => true, :default => nil} %>
+
+	<%= f.label :ticker %>
+	<%= f.text_field :ticker %>
+
+	<%= f.submit "Submit", class: "btn btn-large btn-primary" %>
+</fieldset>

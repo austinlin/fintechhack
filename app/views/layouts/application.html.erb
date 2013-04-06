@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PrivateEquity</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  <%= render 'layouts/shim' %>
+</head>
+<body style="width: 100:%">
+	<%= render 'layouts/header' %>
+	<div style="width:90%; margin: 0 auto">
+        <% flash.each do |key, value| %>
+            <%= content_tag(:div, value, class: "alert alert-#{key}") %>
+        <% end %>
+    </div>
+	<%= yield %>
+  <div class="container" style="width:90%">
+	 <%= render 'layouts/footer' %>
+  </div>
+</body>
+</html>
