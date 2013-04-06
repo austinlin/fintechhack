@@ -5385,3 +5385,164 @@ Served asset /bootstrap.js - 304 Not Modified (3ms)
 
 Started GET "/assets/funds.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 15:07:45 -0400
 Served asset /funds.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-06 16:16:14 -0400
+Processing by FundsController#index as HTML
+  [1m[36m (0.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type = 'table' AND NOT name = 'sqlite_sequence' AND name = "funds"[0m
+  [1m[35mFund Load (1.0ms)[0m  SELECT "funds".* FROM "funds" ORDER BY name
+  Rendered funds/index.html.erb within layouts/application (120.0ms)
+Compiled custom.css  (16009ms)  (pid 30313)
+Compiled funds.css  (13ms)  (pid 30313)
+Compiled application.css  (16490ms)  (pid 30313)
+Compiled jquery.js  (40ms)  (pid 30313)
+Compiled jquery-ui.js  (23ms)  (pid 30313)
+Compiled jquery_ujs.js  (2ms)  (pid 30313)
+Compiled bootstrap-transition.js  (3ms)  (pid 30313)
+Compiled bootstrap-affix.js  (2ms)  (pid 30313)
+Compiled bootstrap-alert.js  (3ms)  (pid 30313)
+Compiled bootstrap-button.js  (3ms)  (pid 30313)
+Compiled bootstrap-carousel.js  (3ms)  (pid 30313)
+Compiled bootstrap-collapse.js  (5ms)  (pid 30313)
+Compiled bootstrap-dropdown.js  (3ms)  (pid 30313)
+Compiled bootstrap-modal.js  (2ms)  (pid 30313)
+Compiled bootstrap-scrollspy.js  (3ms)  (pid 30313)
+Compiled bootstrap-tab.js  (3ms)  (pid 30313)
+Compiled bootstrap-tooltip.js  (3ms)  (pid 30313)
+Compiled bootstrap-popover.js  (3ms)  (pid 30313)
+Compiled bootstrap-typeahead.js  (2ms)  (pid 30313)
+Compiled bootstrap.js  (1499ms)  (pid 30313)
+Compiled funds.js  (3157ms)  (pid 30313)
+Compiled application.js  (5566ms)  (pid 30313)
+  Rendered layouts/_shim.html.erb (2.0ms)
+  Rendered layouts/_header.html.erb (5.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+Completed 200 OK in 23379ms (Views: 23312.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-06 16:16:38 -0400
+Processing by FundsController#index as HTML
+  [1m[36mFund Load (3.0ms)[0m  [1mSELECT "funds".* FROM "funds" ORDER BY name[0m
+  Rendered funds/index.html.erb within layouts/application (31.0ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (6.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 505ms (Views: 498.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-06 16:16:38 -0400
+Served asset /application.css - 200 OK (197ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-04-06 16:16:39 -0400
+Served asset /custom.css - 200 OK (75ms)
+
+
+Started GET "/assets/funds.css?body=1" for 127.0.0.1 at 2013-04-06 16:16:39 -0400
+Served asset /funds.css - 200 OK (12ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-06 16:16:39 -0400
+Served asset /jquery.js - 200 OK (13ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-06 16:16:39 -0400
+Served asset /jquery_ujs.js - 200 OK (18ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2013-04-06 16:16:39 -0400
+Served asset /jquery-ui.js - 200 OK (16ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-04-06 16:16:39 -0400
+Served asset /bootstrap-transition.js - 200 OK (61ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-04-06 16:16:39 -0400
+Served asset /bootstrap-affix.js - 200 OK (15ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-04-06 16:16:39 -0400
+Served asset /bootstrap-alert.js - 200 OK (13ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-04-06 16:16:39 -0400
+Served asset /bootstrap-button.js - 200 OK (11ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-04-06 16:16:39 -0400
+Served asset /bootstrap-carousel.js - 200 OK (19ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-04-06 16:16:39 -0400
+Served asset /bootstrap-collapse.js - 200 OK (16ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-04-06 16:16:39 -0400
+Served asset /bootstrap-dropdown.js - 200 OK (19ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-04-06 16:16:39 -0400
+Served asset /bootstrap-scrollspy.js - 200 OK (20ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-04-06 16:16:39 -0400
+Served asset /bootstrap-modal.js - 200 OK (12ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-04-06 16:16:39 -0400
+Served asset /bootstrap-tab.js - 200 OK (23ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-04-06 16:16:39 -0400
+Served asset /bootstrap-tooltip.js - 200 OK (14ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-04-06 16:16:39 -0400
+Served asset /bootstrap-popover.js - 200 OK (13ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-04-06 16:16:39 -0400
+Served asset /bootstrap-typeahead.js - 200 OK (29ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-04-06 16:16:39 -0400
+Served asset /bootstrap.js - 200 OK (141ms)
+
+
+Started GET "/assets/funds.js?body=1" for 127.0.0.1 at 2013-04-06 16:16:40 -0400
+Served asset /funds.js - 200 OK (9ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-06 16:16:40 -0400
+Served asset /application.js - 200 OK (188ms)
+
+
+Started GET "/funds/new" for 127.0.0.1 at 2013-04-06 16:16:48 -0400
+Processing by FundsController#new as HTML
+  Rendered layouts/_error_messages.html.erb (8.0ms)
+  Rendered funds/_fund_fields.html.erb (155.0ms)
+  Rendered funds/new.html.erb within layouts/application (205.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (4.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 631ms (Views: 604.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-06 16:16:49 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-06 16:16:52 -0400
+Processing by FundsController#index as HTML
+  [1m[35mFund Load (0.0ms)[0m  SELECT "funds".* FROM "funds" ORDER BY name
+  Rendered funds/index.html.erb within layouts/application (57.0ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (3.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 366ms (Views: 364.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-06 16:16:52 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
