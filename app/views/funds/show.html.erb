@@ -1,0 +1,22 @@
+<h1><%= @fund.name %></h1>
+
+<% if @flows.present? %>
+	<table style="width:60%">
+		<th>
+			<td>Date</td>
+			<td>C/D</td>
+			<td>Stock Price</td>
+			<td>Number Shares</td>
+		</th>
+
+		<% @flows.each do |f| %>
+			<tr>
+				<td></td>
+				<td><%= f.day %></td>
+				<td><%= number_with_delimiter(f.cashflow, delimiter: ",", precision: 2) %></td>
+				<td><%= f.stock_price ? f.stock_price : "--"  %></td>
+				<td><%= f.total_shares ? f.total_shares : "--" %></td>
+			</tr>
+		<% end %>
+	</table>
+<% end %>

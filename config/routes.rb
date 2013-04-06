@@ -1,6 +1,9 @@
 PrivateEquity::Application.routes.draw do
 
 resources :funds
+resources :flows do
+  collection { post :import }
+end
 
 match '/dashboard', to: 'funds#dashboard'
 match '/snapshots', to: 'funds#snapshots'

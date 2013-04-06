@@ -13,6 +13,11 @@ class FundsController < ApplicationController
     end
   end
 
+  def show
+    @fund = Fund.find(params[:id])
+    @flows = Flow.where(fund_id: @fund.id)
+  end
+
   def edit
     @fund = Fund.find(params[:id])
   end
@@ -60,6 +65,6 @@ class FundsController < ApplicationController
   end
 
   def alerts
-    
+  
   end
 end

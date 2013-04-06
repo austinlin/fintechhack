@@ -4,14 +4,22 @@
 	<ul>
 		<% @funds.each do |f| %>
 			<li>
-				<%= f.name %> |
+				<%= link_to f.name, f %> |
 				<%= link_to 'Edit', edit_fund_path(f) %> |
 				<%= link_to 'Delete', f, method: :delete, data: {confirm: "Are you sure?"} %>
 			</li>
 		<% end %>
 	</ul>
 
-<%= link_to 'Add a Fund ', new_fund_path %>
+	<%= link_to 'Add a Fund ', new_fund_path %>
+
+	<h2>Import Cash Flows</h2>
+	<%= form_tag import_flows_path, multipart: true do %>
+		<%= file_field_tag :file %>
+		<%= submit_tag 'Import' %>
+	<% end %>
+
+	<h2>Import Valuations</h2>
 
 
 </fieldset>
