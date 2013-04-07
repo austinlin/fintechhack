@@ -8,7 +8,7 @@ class ValuationsController < ApplicationController
   	@valuation = Valuation.new(params[:valuation])
   	if @valuation.save
   		flash[:success] = "New valuation added!"
-  		redirect_to root_url
+  		redirect_to fundmanagement_path
   	else
   		render 'new'
   	end
@@ -24,7 +24,7 @@ class ValuationsController < ApplicationController
 
   def import
   	Valuation.import(params[:file])
-  	redirect_to root_url, notice: "Valuations imported."
+  	redirect_to fundmanagement_path, notice: "Valuations imported."
   end
 
 end

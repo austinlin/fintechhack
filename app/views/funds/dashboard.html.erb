@@ -4,17 +4,20 @@
 	<div class="left_bar span3">
 		<h2>Funds List</h2>
 		<p>Select a fund from your list below to populate the chart at right.</p>
-		<ul>
-			<% @funds.each do |f| %>
-				<h4>
-					<%= link_to f.name, f %>
-					<!--<%= link_to 'Edit', edit_fund_path(f) %> |
-					<%= link_to 'Delete', f, method: :delete, data: {confirm: "Are you sure?"} %>-->
-				</h4>
-			<% end %>
-		</ul>
-        <h3>Fund A</h3>
-        <h3>Fund A</h3>
+        <% fund_count = 1 %>
+        <% if @categories.present? %>
+            <% @categories.each do |f| %>
+            <h2><%= f %></h2>
+                    <% if @categories.present? %>
+                        <% @funds.each do |g| %>
+                            <% if g.fund_type == f %>
+                                 <h4><%= link_to g.name, dashboard_path, :id => fund_count %></h4>
+                                 <% fund_count += 1 %>
+                            <% end %>
+                        <% end %>
+                    <% end %>
+            <% end %>
+        <% end %>
     </div>
 
     <div id="dashboard" class="right_content span9">
@@ -33,51 +36,138 @@
 		</ul>
 
 		<%= link_to 'Add a Fund ', new_fund_path %>!-->
-		<%= content_tag :div, "", id: ("fund_chart") %>
-		<%= content_tag :div, "", id: ("fund_chart2") %>
-		<div id="fund_chart"></div>
-		<div id="fund_chart2"></div>
-
+        <h4>Valuation</h4>
+        <% counter = 0 %>
+        <% counter2 = 0 %>
+        <% if @valuation_chart_group.present? %>
+            <% @valuation_chart_group.each do |f| %>
+            
+		      <%= content_tag :div, "", id: ("valuation_fund_chart"+counter.to_s) %>
+            <% counter+=1 %>
+            <% end %>
+        <% end %>
+        
+        <h4>Calls and Distributions</h4>
+        <% if @flow_chart_group.present? %>
+            <% @flow_chart_group.each do |f| %>
+            
+              <%= content_tag :div, "", id: ("flow_fund_chart"+counter2.to_s) %>
+            <% counter2+=1 %>
+            <% end %>
+        <% end %>
+		<%= content_tag :div, "", id: ("flow_fund_chart1") %>
+        <%= content_tag :div, "", id: ("flow_fund_chart2") %>
+        <%= content_tag :div, "", id: ("flow_fund_chart3") %>
+        <%= content_tag :div, "", id: ("flow_fund_chart4") %>
+        <%= content_tag :div, "", id: ("flow_fund_chart5") %>
+        <%= content_tag :div, "", id: ("flow_fund_chart6") %>
+        <div id="disqus_thread"></div>
 	</div>
+    
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'whirr'; // required: replace example with your forum shortname
 
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
 
 <script type="text/javascript">
 (function(){
 	var $autocomplete = $('#autocomplete'),
+        $fund = $('.fund_item'),
 		$symbol = $('#symbol'),
+        $fund1 = $('#1'),
+        $fund2 = $('#2'),
+        $fund3 = $('#3'),
+        $fund4 = $('#4'),
+        $fund5 = $('#5'),
+        $fund6 = $('#6'),
+        $flow_chart1 = $('#flow_fund_chart1'),
+        $flow_chart2 = $('#flow_fund_chart2'),
+        $flow_chart3 = $('#flow_fund_chart3'),
+        $flow_chart4 = $('#flow_fund_chart4'),
+        $flow_chart5 = $('#flow_fund_chart5'),
+        $flow_chart6 = $('#flow_fund_chart6'),
 		symbol_set = ["IXIC", "DJI", "INX", "NQGM", "NQGS", "NYA", "RUI", "RUT", "RUA", "OEX", "SPX", "WLX", "VINX30", "OEX"],
 		oldText = null,
-		symbolBlurTimer;
+		symbolBlurTimer,
+        fund_counter = <%= @funds_count %>,
+        valuation_chart_data = <%= raw @valuation_chart_group.to_json %>;
 
-	new Morris.Line({
-	  element: 'fund_chart',
-	  data: <%= raw @fund_chart.to_json %>,
-	  /*[
-	    { date: '2008', value: 20},
-	    { date: '2009', value: 10 },
-	    { date: '2010', value: 5 },
-	    { date: '2011', value: 5 },
-	    { date: '2012', value: 20 }
-	  ],*/
-	  xkey: 'date',
-	  ykeys: ['value'],
-	  labels: ['Value']
-	});
+        $flow_chart2.hide();
+        $flow_chart3.hide();
+        $flow_chart4.hide();
+        $flow_chart5.hide();
+        $flow_chart6.hide();
+
+        // for (i = 0; i < fund_counter; i++) {
+        // 	new Morris.Line({
+        // 	  element:  'valuation_fund_chart' + '' + i,
+        // 	  data: valuation_chart_data[i],
+        // 	  xkey: 'date',
+        // 	  ykeys: ['value'],
+        // 	  labels: ['Value']
+        // 	});
+        // }
+        // for (j = 0; j < fund_counter; j++) {
+        //     new Morris.Bar({
+        //         element: 'flow_fund_chart25',
+        //         data: funds_chart_data[j],
+        //         xkey: 'day',
+        //         ykeys: ['cashflow'],
+        //         labels: ['Value']
+        // });
+        // }
 	new Morris.Bar({
-	  element: 'fund_chart2',
-	  data: <%= raw @fund_chart2.to_json %>,
-	  /*[
-	    { date: '2008', value: 20},
-	    { date: '2009', value: 10 },
-	    { date: '2010', value: 5 },
-	    { date: '2011', value: 5 },
-	    { date: '2012', value: 20 }
-	  ],*/
-	  xkey: 'date',
-	  ykeys: ['value'],
-	  labels: ['Value']
-	});
-	
+      element: 'flow_fund_chart1',
+      data: <%= raw @flow_chart1.to_json %>,
+      xkey: 'date',
+      ykeys: ['value'],
+      labels: ['Value']
+    });
+    new Morris.Bar({
+      element: 'flow_fund_chart2',
+      data: <%= raw @flow_chart2.to_json %>,
+      xkey: 'date',
+      ykeys: ['value'],
+      labels: ['Value']
+    });
+    new Morris.Bar({
+      element: 'flow_fund_chart3',
+      data: <%= raw @flow_chart3.to_json %>,
+      xkey: 'date',
+      ykeys: ['value'],
+      labels: ['Value']
+    });
+    new Morris.Bar({
+      element: 'flow_fund_chart4',
+      data: <%= raw @flow_chart4.to_json %>,
+      xkey: 'date',
+      ykeys: ['value'],
+      labels: ['Value']
+    });
+    new Morris.Bar({
+      element: 'flow_fund_chart5',
+      data: <%= raw @flow_chart5.to_json %>,
+      xkey: 'date',
+      ykeys: ['value'],
+      labels: ['Value']
+    });
+    new Morris.Bar({
+      element: 'flow_fund_chart6',
+      data: <%= raw @flow_chart6.to_json %>,
+      xkey: 'date',
+      ykeys: ['value'],
+      labels: ['Value']
+    });
 	$symbol.on('keyup', function(e) {
             if (e.which == 27) { // Escape cancels
                 $symbol.blur();
@@ -168,5 +258,62 @@
             $autocomplete.hide();
             $symbol.val($selected.text());
         }
+
+        $fund1.on('click', function(e){
+            e.preventDefault();
+            console.log("clicked fund 1");
+            $flow_chart1.slideToggle();
+            $flow_chart2.hide();
+            $flow_chart3.hide();
+            $flow_chart4.hide();
+            $flow_chart5.hide();
+            $flow_chart6.hide();
+        });
+
+        $fund2.on('click', function(e){
+            e.preventDefault();
+            $flow_chart2.slideToggle();
+            $flow_chart1.hide();
+            $flow_chart3.hide();
+            $flow_chart4.hide();
+            $flow_chart5.hide();
+            $flow_chart6.hide();
+        });
+        $fund3.on('click', function(e){
+            e.preventDefault();
+            $flow_chart3.slideToggle();
+            $flow_chart2.hide();
+            $flow_chart1.hide();
+            $flow_chart4.hide();
+            $flow_chart5.hide();
+            $flow_chart6.hide();
+        });
+        $fund4.on('click', function(e){
+            e.preventDefault();
+            $flow_chart4.slideToggle();
+            $flow_chart2.hide();
+            $flow_chart3.hide();
+            $flow_chart1.hide();
+            $flow_chart5.hide();
+            $flow_chart6.hide();
+        });
+        $fund5.on('click', function(e){
+            e.preventDefault();
+            $flow_chart5.slideToggle();
+            $flow_chart2.hide();
+            $flow_chart3.hide();
+            $flow_chart4.hide();
+            $flow_chart1.hide();
+            $flow_chart6.hide();
+        });
+        $fund6.on('click', function(e){
+            e.preventDefault();
+            $flow_chart6.slideToggle();
+            $flow_chart2.hide();
+            $flow_chart3.hide();
+            $flow_chart4.hide();
+            $flow_chart5.hide();
+            $flow_chart1.hide();
+        });
 })();
 </script>
