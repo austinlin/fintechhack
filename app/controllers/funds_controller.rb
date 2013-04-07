@@ -62,13 +62,15 @@ class FundsController < ApplicationController
   def alerts
   end
   
+  require 'finance'
+  include Finance
   def benchmark_data
     require 'price_pull'
     require 'json'
     
-    #params[:fund_id] = 1
-    #params[:benchmark_name] = 'IBM US Equity'
-       
+    params[:fund_id] = 1
+    params[:benchmark_name] = 'IBM US Equity'
+    
     unless params[:fund_id] and params[:benchmark_name]
       render text: 'error'
       return
@@ -128,26 +130,26 @@ class FundsController < ApplicationController
     
     irrs = {}
     vals.each do |x|
-      trans = {}
+      trans = []
       bmk_flows.keys.each do |dt|
         if dt <= x['day']
-          trans[dt] = bmk_flows[dt]
+          trans << Transaction.new(bmk_flows[dt], date: Time.parse(dt.to_s))
         end
       end
-      trans[x['day']] = bmk_vals[x['day']]
+      trans << Transaction.new(bmk_vals[x['day']], date: Time.parse(x['day'].to_s))
       
-      irrs[x['day']] = rand(100) # todo: drop in IRR calculator
+      irrs[x['day']] = trans.xirr(0.6)
     end
     unless irrs.has_key?(end_date)
-      trans = {}
+      trans = []
       bmk_flows.keys.each do |dt|
         if dt <= end_date
-          trans[dt] = bmk_flows[dt]
+          trans << Transaction.new(bmk_flows[dt], date: Time.parse(dt.to_s))
         end
       end
-      trans[end_date] = bmk_vals[end_date]
+      trans << Transaction.new(bmk_vals[end_date], date: Time.parse(end_date.to_s))
       
-      irrs[end_date] = rand(100) # todo: drop in IRR calculator
+      irrs[end_date] = trans.xirr(0.6)
     end
     
     render text: JSON.dump({
