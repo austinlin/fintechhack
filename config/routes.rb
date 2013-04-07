@@ -8,6 +8,8 @@ resources :valuations do
   collection { post :import }
 end
 
+match '/benchmark_data', to: 'funds#benchmark_data', as: :benchmark_data
+
 match '/dashboard', to: 'funds#dashboard'
 match '/snapshots', to: 'funds#snapshots'
 match '/settings', to: 'funds#settings'
