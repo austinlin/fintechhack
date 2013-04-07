@@ -1,6 +1,18 @@
-<h1>Dashboard</h1>
 
-<fieldset>
+
+	<h1>Dashboard</h1>
+	<div class="left_bar span3">
+		<h2>Funds List</h2>
+		<p>Select a fund from your list below to populate the chart at right.</p>
+        <h3>Fund A</h3>
+        <h3>Fund A</h3>
+        <h3>Fund A</h3>
+        <h3>Fund A</h3>
+    </div>
+
+    <div class="right_content span9">
+    <h2>Data Comparison List</h2>
+    <p>Search for any public security to compare to your fund.</p>
 	<ul>
 		<% @funds.each do |f| %>
 			<li>
@@ -13,5 +25,4 @@
 
 	<%= link_to 'Add a Fund ', fundmanagement_path %>
 
-
-</fieldset>
+	</div>
