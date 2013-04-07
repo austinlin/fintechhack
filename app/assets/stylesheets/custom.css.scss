@@ -10,22 +10,25 @@ body {
 header {
 }
 
+#header_container {
+ width: 960px;
+ margin: 0 auto;
+}
+
 #logo_container {
  height: 137px;
- width: 500px;
+ width: 450px;
  float: left;
- margin-left: 210px;
 }
 
 #user_info {
   float: right;
-  margin-right: 100px;
 }
 
 #nav_container {
   background-color: #aacbd6;
   width: 100%;
-  padding: 10px 0 10px 0;
+  padding: 15px 0 10px 0;
   height: 25px;
   clear: both;
 }
@@ -36,13 +39,20 @@ nav {
   color: #FFF;
   display: block;
   margin: 0 auto;
-  width: 600px
+  width: 800px
 }
 
 nav a {
   color: #FFF;
+  margin: 0 20px;
+}
+nav a:hover {
+  color: #FFF;
 }
 
+nav ul, ol {
+  margin: 0 25px 10px 25px;
+}
 
 
 /* content */
@@ -88,13 +98,13 @@ footer .logo_container {
   background: url(logo_mark_footer.png) no-repeat;
   width: 73px;
   height: 83px;  
-  margin: 10px 0 10px 210px;
+  margin: 10px 0 10px 0px;
   float: left;
 }
 
 footer .nav {
   float: right;
-  margin: 30px 0 0 208px;
+  margin: 42px 0px 0 0px
 }
 
 footer a {
@@ -119,16 +129,35 @@ footer .bottom_bar {
   clear: both;
 }
 
+footer #footer_container {
+  width: 960px;
+  margin: 0 auto;
+}
 /* buttons */
 .button {
   background-color: #4096a4;
-  padding: 10px;
+  padding: 30px;
   border: 0;    
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
   color: #fff;
   text-transform: uppercase;
+}
+
+/* login */
+#login {
+  margin: 70px auto 0 auto;
+  width: 200px; 
+  text-align: center;
+  font-size: 30px;
+}
+#login a {
+  color: #FFF;
+}
+#login a:hover {
+  color: #D6D6D6;
+  text-decoration: none;
 }
 
 /* dashboard */

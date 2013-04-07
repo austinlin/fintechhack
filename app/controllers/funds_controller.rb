@@ -70,8 +70,8 @@ class FundsController < ApplicationController
     # for i in 0..(@valuation_days.count - 1)
     #     @fund_chart[i] = {date: @valuation_days[i], value: @valuation_values[i]}
     # end
-    @flow_days1 = Flow.where(:fund_id => 7).pluck(:day)
-    @flow_cashflow1 = Flow.where(:fund_id => 7).pluck(:cashflow)
+    @flow_days1 = Flow.where(:fund_id => 1).pluck(:day)
+    @flow_cashflow1 = Flow.where(:fund_id => 1).pluck(:cashflow)
     for i in 0..(@flow_days1.count - 1)
         @flow_chart1[i] = {date: @flow_days1[i], value: @flow_cashflow1[i]}
     end
@@ -147,8 +147,8 @@ class FundsController < ApplicationController
   def alerts
   end
   
-  require 'finance'
-  include Finance
+  
+  
   def benchmark_data
     require 'price_pull'
     require 'json'

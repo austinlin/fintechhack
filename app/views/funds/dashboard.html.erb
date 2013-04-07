@@ -1,13 +1,14 @@
 
 
-	<h1>Dashboard</h1>
+	
 	<div class="left_bar span3">
+        <h1>Dashboard</h1>
 		<h2>Funds List</h2>
 		<p>Select a fund from your list below to populate the chart at right.</p>
         <% fund_count = 1 %>
         <% if @categories.present? %>
             <% @categories.each do |f| %>
-            <h2><%= f %></h2>
+            <h3><%= f %></h3>
                     <% if @categories.present? %>
                         <% @funds.each do |g| %>
                             <% if g.fund_type == f %>
@@ -21,7 +22,6 @@
     </div>
 
     <div id="dashboard" class="right_content span9">
-	    <h2>Data Comparison</h2>
 	    <p>Search for any public security to compare to your fund.</p>
 		<input type="text" id="symbol" name="symbol" placeholder="SPX" autocomplete="on"/>
         <div id="autocomplete" style="display: none;"></div>
@@ -36,17 +36,8 @@
 		</ul>
 
 		<%= link_to 'Add a Fund ', new_fund_path %>!-->
-        <h4>Valuation</h4>
-        <% counter = 0 %>
-        <% counter2 = 0 %>
-        <% if @valuation_chart_group.present? %>
-            <% @valuation_chart_group.each do |f| %>
-            
-		      <%= content_tag :div, "", id: ("valuation_fund_chart"+counter.to_s) %>
-            <% counter+=1 %>
-            <% end %>
-        <% end %>
-        
+        <h4>Cumulative IRR</h4>
+        <div id="irr_chart"></div>
         <h4>Calls and Distributions</h4>
         <% if @flow_chart_group.present? %>
             <% @flow_chart_group.each do |f| %>
@@ -55,12 +46,14 @@
             <% counter2+=1 %>
             <% end %>
         <% end %>
+
 		<%= content_tag :div, "", id: ("flow_fund_chart1") %>
         <%= content_tag :div, "", id: ("flow_fund_chart2") %>
         <%= content_tag :div, "", id: ("flow_fund_chart3") %>
         <%= content_tag :div, "", id: ("flow_fund_chart4") %>
         <%= content_tag :div, "", id: ("flow_fund_chart5") %>
         <%= content_tag :div, "", id: ("flow_fund_chart6") %>
+        
         <div id="disqus_thread"></div>
 	</div>
     
@@ -96,17 +89,45 @@
         $flow_chart4 = $('#flow_fund_chart4'),
         $flow_chart5 = $('#flow_fund_chart5'),
         $flow_chart6 = $('#flow_fund_chart6'),
+        $irr_data = [
+            {'date':'2005-12-31','fund1':'0','fund2':'0','fund3':'0'},
+            {'date':'2006-3-31','fund1':'-0.05','fund2':'-0.08','fund3':'-0.09'},
+            {'date':'2006-6-30','fund1':'-0.04','fund2':'-0.07','fund3':'-0.08'},
+            {'date':'2006-9-30','fund1':'-0.05','fund2':'-0.08','fund3':'-0.09'},
+            {'date':'2006-12-31','fund1':'-0.02','fund2':'-0.05','fund3':'-0.06'},
+            {'date':'2007-3-31','fund1':'-0.07','fund2':'-0.1','fund3':'-0.11'},
+            {'date':'2007-6-30','fund1':'-0.08','fund2':'-0.11','fund3':'-0.12'},
+            {'date':'2007-9-30','fund1':'-0.09','fund2':'-0.12','fund3':'-0.05'},
+            {'date':'2007-12-31','fund1':'-0.1','fund2':'-0.13','fund3':'-0.06'},
+            {'date':'2008-3-31','fund1':'-0.12','fund2':'-0.15','fund3':'-0.16'},
+            {'date':'2008-6-30','fund1':'-0.13','fund2':'-0.16','fund3':'-0.17'},
+            {'date':'2008-9-30','fund1':'-0.15','fund2':'-0.18','fund3':'-0.19'},
+            {'date':'2008-12-31','fund1':'-0.22','fund2':'-0.25','fund3':'-0.35'},
+            {'date':'2009-3-31','fund1':'-0.22','fund2':'-0.25','fund3':'-0.36'},
+            {'date':'2009-6-30','fund1':'-0.18','fund2':'-0.21','fund3':'-0.22'},
+            {'date':'2009-9-30','fund1':'-0.15','fund2':'-0.18','fund3':'-0.19'},
+            {'date':'2009-12-31','fund1':'-0.12','fund2':'-0.15','fund3':'-0.16'},
+            {'date':'2010-3-31','fund1':'-0.11','fund2':'-0.14','fund3':'-0.15'},
+            {'date':'2010-6-30','fund1':'-0.05','fund2':'-0.08','fund3':'-0.09'},
+            {'date':'2010-9-30','fund1':'0.01','fund2':'0.04','fund3':'0.05'},
+            {'date':'2010-12-31','fund1':'0.02','fund2':'0.05','fund3':'0.06'},
+            {'date':'2011-3-31','fund1':'0','fund2':'0.03','fund3':'0.04'},
+            {'date':'2011-6-30','fund1':'0.06','fund2':'0.09','fund3':'0'},
+            {'date':'2011-9-30','fund1':'0.05','fund2':'0.08','fund3':'0.09'},
+            {'date':'2011-12-31','fund1':'0.07','fund2':'0.1','fund3':'0.11'},
+            {'date':'2012-3-31','fund1':'0.11','fund2':'0.14','fund3':'0.15'},
+            {'date':'2012-6-30','fund1':'0.06','fund2':'0.09','fund3':'0.1'},
+            {'date':'2012-9-30','fund1':'0.08','fund2':'0.11','fund3':'0.06'},
+            {'date':'2012-12-31','fund1':'0.09','fund2':'0.12','fund3':'0.13'}
+            ],
 		symbol_set = ["IXIC", "DJI", "INX", "NQGM", "NQGS", "NYA", "RUI", "RUT", "RUA", "OEX", "SPX", "WLX", "VINX30", "OEX"],
 		oldText = null,
 		symbolBlurTimer,
         fund_counter = <%= @funds_count %>,
-        valuation_chart_data = <%= raw @valuation_chart_group.to_json %>;
+        valuation_chart_data = <%= raw @valuation_chart_group.to_json %>,
+        $irr_chart;
 
-        $flow_chart2.hide();
-        $flow_chart3.hide();
-        $flow_chart4.hide();
-        $flow_chart5.hide();
-        $flow_chart6.hide();
+
 
         // for (i = 0; i < fund_counter; i++) {
         // 	new Morris.Line({
@@ -126,6 +147,13 @@
         //         labels: ['Value']
         // });
         // }
+    new Morris.Line({
+      element: 'irr_chart',
+      data: $irr_data,
+      xkey: 'date',
+      ykeys: ['fund1','fund2', 'fund3'],
+      labels: ['fund1','fund2', 'fund3']
+    });
 	new Morris.Bar({
       element: 'flow_fund_chart1',
       data: <%= raw @flow_chart1.to_json %>,
@@ -257,11 +285,14 @@
             clearTimeout(symbolBlurTimer);
             $autocomplete.hide();
             $symbol.val($selected.text());
+            for (var i = 0; i < $irr_data.length; i++) {
+                $irr_data[i]['fund4'] = $irr_data[i]['fund3']* $irr_data[i]['fund2'];
+            }
+            $irr_chart.hide();
         }
 
         $fund1.on('click', function(e){
             e.preventDefault();
-            console.log("clicked fund 1");
             $flow_chart1.slideToggle();
             $flow_chart2.hide();
             $flow_chart3.hide();
