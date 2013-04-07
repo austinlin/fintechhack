@@ -4,6 +4,7 @@
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
 }
 
 header {
@@ -13,7 +14,7 @@ header {
  height: 137px;
  width: 500px;
  float: left;
- margin-left: 100px;
+ margin-left: 210px;
 }
 
 #user_info {
@@ -47,19 +48,19 @@ nav a {
 /* content */
 .container {
   width: 980px;
-  border: solid 1px gray;
   margin: 0 auto;
   clear: both;
   padding: 20px;
+  min-height: 500px;
 }
 
 .left_bar {
-  border: 1px solid gray;
+  
   float: left;
 }
 
 .right_content {
-  border: 1px solid gray;
+  
   float: left;
 }
 
@@ -76,16 +77,51 @@ nav a {
 }
 
 /* footer */
-footer{
-  height: 75px;
-  padding: 25px;
-  background-color: f6f6f6;
-  border: 1px solid gray;
+footer {
+  background-color: #4a4a4c;
+  height: 125px;
+  font-size: 15px;
+  width: 100%;
+}
+
+footer .logo_container {
+  background: url(logo_mark_footer.png) no-repeat;
+  width: 73px;
+  height: 83px;  
+  margin: 10px 0 10px 210px;
+  float: left;
+}
+
+footer .nav {
+  float: right;
+  margin: 30px 0 0 208px;
+}
+
+footer a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #FFF;
+  margin: 0 25px
+}
+footer span {
+  color: #FFF;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: #FFF;
+}
+
+footer .bottom_bar {
+  background-color: #151517;
+  width: 100%;
+  height: 25px;
+  clear: both;
 }
 
 /* buttons */
 .button {
-  background-color: 4096a4;
+  background-color: #4096a4;
   padding: 10px;
   border: 0;    
   -webkit-border-radius: 3px;
