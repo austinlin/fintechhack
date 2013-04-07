@@ -44,6 +44,20 @@ class FundsController < ApplicationController
 
   def dashboard
     @funds = Fund.order(:name)
+    @graph = Fund.find(1)
+    @flow_days = Flow.where(:fund_id => 1).pluck(:day)
+    @flow_cashflow = Flow.where(:fund_id => 1).pluck(:cashflow)
+    @valuation_days = Valuation.where(:fund_id => 1).pluck(:day)
+    @valuation_values= Valuation.where(:fund_id => 1).pluck(:value)
+    @fund_chart = []
+    @fund_chart2 = []
+    for i in 0..(@valuation_days.count - 1)
+        @fund_chart[i] = {date: @valuation_days[i], value: @valuation_values[i]}
+    end
+        for i in 0..(@flow_days.count - 1)
+        @fund_chart2[i] = {date: @flow_days[i], value: @flow_cashflow[i]}
+    end
+
   end
 
 

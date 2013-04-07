@@ -130,3 +130,23 @@ footer .bottom_bar {
   color: #fff;
   text-transform: uppercase;
 }
+
+/* dashboard */
+
+#dashboard #symbol {
+}
+
+#dashboard #autocomplete {
+    position: absolute;
+    width: 182px;
+    margin-top: 0px;
+    z-index: 1001;
+    background-color: #f6f6f6;
+}
+#dashboard #autocomplete .result {
+    padding: 12px 16px;
+    cursor: pointer;
+}
+#dashboard #autocomplete .result.hover {
+    background: #ddd;
+}

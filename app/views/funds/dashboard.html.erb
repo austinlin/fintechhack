@@ -4,25 +4,169 @@
 	<div class="left_bar span3">
 		<h2>Funds List</h2>
 		<p>Select a fund from your list below to populate the chart at right.</p>
-        <h3>Fund A</h3>
-        <h3>Fund A</h3>
+		<ul>
+			<% @funds.each do |f| %>
+				<h4>
+					<%= link_to f.name, f %>
+					<!--<%= link_to 'Edit', edit_fund_path(f) %> |
+					<%= link_to 'Delete', f, method: :delete, data: {confirm: "Are you sure?"} %>-->
+				</h4>
+			<% end %>
+		</ul>
         <h3>Fund A</h3>
         <h3>Fund A</h3>
     </div>
 
-    <div class="right_content span9">
-    <h2>Data Comparison</h2>
-    <p>Search for any public security to compare to your fund.</p>
-	<ul>
-		<% @funds.each do |f| %>
-			<li>
-				<%= link_to f.name, f %> |
-				<%= link_to 'Edit', edit_fund_path(f) %> |
-				<%= link_to 'Delete', f, method: :delete, data: {confirm: "Are you sure?"} %>
-			</li>
-		<% end %>
-	</ul>
+    <div id="dashboard" class="right_content span9">
+	    <h2>Data Comparison</h2>
+	    <p>Search for any public security to compare to your fund.</p>
+		<input type="text" id="symbol" name="symbol" placeholder="SPX" autocomplete="on"/>
+        <div id="autocomplete" style="display: none;"></div>
+        <!--<ul>
+			<% @funds.each do |f| %>
+				<li>
+					<%= link_to f.name, f %> |
+					<%= link_to 'Edit', edit_fund_path(f) %> |
+					<%= link_to 'Delete', f, method: :delete, data: {confirm: "Are you sure?"} %>
+				</li>
+			<% end %>
+		</ul>
 
-	<%= link_to 'Add a Fund ', fundmanagement_path %>
+		<%= link_to 'Add a Fund ', new_fund_path %>!-->
+		<%= content_tag :div, "", id: ("fund_chart") %>
+		<%= content_tag :div, "", id: ("fund_chart2") %>
+		<div id="fund_chart"></div>
+		<div id="fund_chart2"></div>
 
 	</div>
+
+
+<script type="text/javascript">
+(function(){
+	var $autocomplete = $('#autocomplete'),
+		$symbol = $('#symbol'),
+		symbol_set = ["IXIC", "DJI", "INX", "NQGM", "NQGS", "NYA", "RUI", "RUT", "RUA", "OEX", "SPX", "WLX", "VINX30", "OEX"],
+		oldText = null,
+		symbolBlurTimer;
+
+	new Morris.Line({
+	  element: 'fund_chart',
+	  data: <%= raw @fund_chart.to_json %>,
+	  /*[
+	    { date: '2008', value: 20},
+	    { date: '2009', value: 10 },
+	    { date: '2010', value: 5 },
+	    { date: '2011', value: 5 },
+	    { date: '2012', value: 20 }
+	  ],*/
+	  xkey: 'date',
+	  ykeys: ['value'],
+	  labels: ['Value']
+	});
+	new Morris.Bar({
+	  element: 'fund_chart2',
+	  data: <%= raw @fund_chart2.to_json %>,
+	  /*[
+	    { date: '2008', value: 20},
+	    { date: '2009', value: 10 },
+	    { date: '2010', value: 5 },
+	    { date: '2011', value: 5 },
+	    { date: '2012', value: 20 }
+	  ],*/
+	  xkey: 'date',
+	  ykeys: ['value'],
+	  labels: ['Value']
+	});
+	
+	$symbol.on('keyup', function(e) {
+            if (e.which == 27) { // Escape cancels
+                $symbol.blur();
+                $autocomplete.hide();
+                return;
+            } else if (e.which == 38 || e.which == 40 || e.which == 13) { // Allow arrow keys and enter to select
+                var results = $('.result'),
+                    hovered = $('.result.hover');
+                if (results.length) {
+                    if (hovered.length) {
+                        if (e.which == 40) {
+                            hovered.removeClass('hover').next().addClass('hover');
+                        } else if (e.which == 38) {
+                            hovered.removeClass('hover').prev().addClass('hover');
+                        } else {
+                            selectSymbol(hovered);
+                        }
+                    } else {
+                        if (e.which == 40) {
+                            results.first().addClass('hover');
+                        } else if (e.which == 38) {
+                            results.last().addClass('hover');
+                        }
+                    }
+                }
+                return;
+            }
+            
+            var val = $.trim($symbol.val()).toUpperCase(),
+                i,
+                count = 0,
+                firstResults = [],
+                secondResults = [];
+                
+            if (val && val !== oldText) {
+                $autocomplete
+                    .html('')
+                    .show();
+                for (i = 0; i < symbol_set.length; i++) {
+                    if (symbol_set[i].indexOf(val) > -1) {
+                        if (symbol_set[i].indexOf(val) === 0) { // suggestions beginning with same letter are shown first
+                            firstResults.push('<div class="result">' + symbol_set[i] + '</div>');
+                        } else {
+                            secondResults.push('<div class="result">' + symbol_set[i] + '</div>');
+                        }
+                    }
+                }
+                for (i = 0; i < firstResults.length && count < 10; i++) {
+                    $autocomplete.append(firstResults[i]);
+                    count++;
+                }
+                for (i = 0; i < secondResults.length && count < 10; i++) {
+                    $autocomplete.append(secondResults[i]);
+                    count++;
+                }
+                $('.result').eq(0).addClass('hover');
+                $('.result').on('click', function(e){
+                    selectSymbol($(this));
+                    e.stopPropagation();
+                }).hover(function() {
+                    $('.result.hover').removeClass('hover');
+                    $(this).addClass('hover');
+                }, function() {
+                    $(this).removeClass('hover');
+                });
+            } 
+            if (!val) {
+                $autocomplete.hide();
+            }
+            oldText = val;
+        }).on('blur', function(e) {
+            symbolBlurTimer = setTimeout(function() {
+                $autocomplete.hide();
+            }, 300);
+        }).on('keypress', function(e) {
+            if (e.keyCode == 13) {
+                e.preventDefault();
+            }
+        }).on('keydown', function(e) {
+            if (e.which == 9) {
+                var hovered = $('.result.hover');
+                if (hovered.length) selectSymbol(hovered);
+            }
+        });
+
+        function selectSymbol($selected) {
+            clearTimeout(symbolBlurTimer);
+            $autocomplete.hide();
+            $symbol.val($selected.text());
+        }
+})();
+</script>
