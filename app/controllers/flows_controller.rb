@@ -7,7 +7,7 @@ class FlowsController < ApplicationController
   	@flow = Flow.new(params[:flow])
   	if @flow.save
   		flash[:success] = "New flow added!"
-  		redirect_to root_url
+  		redirect_to fundmanagement_path
   	else
   		render 'new'
   	end
@@ -23,7 +23,7 @@ class FlowsController < ApplicationController
 
   def import
   	Flow.import(params[:file])
-  	redirect_to root_url, notice: "Cash flows imported."
+  	redirect_to fundmanagement_path, notice: "Cash flows imported."
   end
 
 end
