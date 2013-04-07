@@ -1,13 +1,17 @@
 <h1>Fund Management</h1>
 
 <fieldset>
-	
+
 <h2>Import Cash Flows</h2>
-	<%= form_tag import_flows_path, multipart: true do %>
-		<%= file_field_tag :file %>
-		<%= submit_tag 'Import' %>
-	<% end %>
+<%= form_tag import_flows_path, multipart: true do %>
+	<%= file_field_tag :file %>
+	<%= submit_tag 'Import' %>
+<% end %>
 
 <h2>Import Valuations</h2>
+<%= form_tag import_valuations_path, multipart: true do %>
+	<%= file_field_tag :file %>
+	<%= submit_tag 'Import' %>
+<% end %>
 
 </fieldset>

@@ -65,8 +65,8 @@ class FundsController < ApplicationController
   def show
     @fund = Fund.find(params[:id])
     @flows = Flow.where(fund_id: @fund.id)
-    @valuations = Valuation.where(fund_id: @fund.id)
+    #@valuations = Valuation.where(fund_id: @fund.id)
 
-    @flows_and_valuations = (@flows + @valuations).sort_by {|hash| hash[:day]}
+    #@flows_and_valuations = (@flows + @valuations).sort_by {|hash| hash[:day]}
   end
 end
