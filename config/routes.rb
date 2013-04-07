@@ -4,6 +4,9 @@ resources :funds
 resources :flows do
   collection { post :import }
 end
+resources :valuations do
+  collection { post :import }
+end
 
 match '/dashboard', to: 'funds#dashboard'
 match '/snapshots', to: 'funds#snapshots'

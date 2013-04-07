@@ -7,6 +7,8 @@ class Fund < ActiveRecord::Base
   validates :fund_type, inclusion: { :in => VALID_FUND_TYPES, message: "%{value} is not a valid fund type"}
   validates :ticker, uniqueness: true
 
+  default_scope order: 'funds.name'
+
   has_many :flows, dependent: :destroy
   has_many :valuations, dependent: :destroy
 

@@ -10,7 +10,6 @@ class Flow < ActiveRecord::Base
 
   belongs_to :fund
 
-
   def self.import(file)
   	CSV.foreach(file.path, headers: true) do |row|
   		flow = find_by_fund_id_and_day(row["fund id"], Date.strptime(row["date"], "%m/%d/%y")) || 
