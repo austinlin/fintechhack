@@ -4,6 +4,9 @@ resources :funds
 resources :flows do
   collection { post :import }
 end
+resources :valuations do
+  collection { post :import }
+end
 
 root to: 'funds#index'
 

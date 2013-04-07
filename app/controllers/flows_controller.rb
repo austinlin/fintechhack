@@ -6,7 +6,7 @@ class FlowsController < ApplicationController
   def create
   	@flow = Flow.new(params[:flow])
   	if @flow.save
-  		flash[:success] = "New flow created"
+  		flash[:success] = "New flow added!"
   		redirect_to root_url
   	else
   		render 'new'

@@ -5544,4 +5544,270 @@ Completed 200 OK in 366ms (Views: 364.0ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-06 16:16:52 -0400
-Served asset /jquery.js - 304 Not Modified (0ms)
+Served asset /jquery.js - 304 Not Modified (0ms)Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 19:37:30 -0400
+Processing by FundsController#index as HTML
+  [1m[36m (1.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type = 'table' AND NOT name = 'sqlite_sequence' AND name = "funds"[0m
+  [1m[35mFund Load (0.0ms)[0m  SELECT "funds".* FROM "funds" ORDER BY funds.name, name
+  Rendered funds/index.html.erb within layouts/application (239.0ms)
+Compiled valuations.css  (177ms)  (pid 80650)
+Compiled application.css  (480ms)  (pid 80650)
+Compiled valuations.js  (5837ms)  (pid 80650)
+Compiled application.js  (6289ms)  (pid 80650)
+  Rendered layouts/_shim.html.erb (4.0ms)
+  Rendered layouts/_header.html.erb (18.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+Completed 200 OK in 10126ms (Views: 9999.0ms | ActiveRecord: 50.0ms)
+
+
+Started GET "/assets/valuations.css?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 19:37:45 -0400
+Served asset /valuations.css - 200 OK (84ms)
+
+
+Started GET "/assets/application.css?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 19:37:45 -0400
+Served asset /application.css - 304 Not Modified (353ms)
+
+
+Started GET "/assets/valuations.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 19:37:46 -0400
+Served asset /valuations.js - 200 OK (13ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 19:37:46 -0400
+Served asset /bootstrap-carousel.js - 304 Not Modified (39ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 19:37:46 -0400
+Served asset /jquery.js - 304 Not Modified (51ms)
+
+
+Started GET "/assets/flows.css?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 19:37:46 -0400
+Served asset /flows.css - 304 Not Modified (16ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 19:37:46 -0400
+Served asset /jquery-ui.js - 304 Not Modified (107ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 19:37:46 -0400
+Served asset /bootstrap-button.js - 304 Not Modified (87ms)
+
+
+Started GET "/assets/custom.css?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 19:37:46 -0400
+Served asset /custom.css - 304 Not Modified (102ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 19:37:46 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (36ms)
+
+
+Started GET "/assets/funds.css?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 19:37:46 -0400
+Served asset /funds.css - 304 Not Modified (29ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 19:37:47 -0400
+Served asset /bootstrap-affix.js - 304 Not Modified (87ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 19:37:47 -0400
+Served asset /bootstrap-alert.js - 304 Not Modified (38ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 19:37:47 -0400
+Served asset /bootstrap-transition.js - 304 Not Modified (55ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 19:37:47 -0400
+Served asset /bootstrap-dropdown.js - 304 Not Modified (104ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 19:37:47 -0400
+Served asset /bootstrap-collapse.js - 304 Not Modified (111ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 19:37:47 -0400
+Served asset /bootstrap-modal.js - 304 Not Modified (329ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 19:37:47 -0400
+Served asset /bootstrap-popover.js - 304 Not Modified (73ms)
+
+
+Started GET "/assets/flows.js?body=1" for 127.0.0.1 at 2013-04-06 19:37:48 -0400
+Served asset /flows.js - 304 Not Modified (85ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-04-06 19:37:48 -0400
+Served asset /bootstrap.js - 304 Not Modified (654ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-06 19:37:48 -0400
+Served asset /application.js - 304 Not Modified (433ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-04-06 19:37:49 -0400
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (25ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-04-06 19:37:49 -0400
+Served asset /bootstrap-tab.js - 304 Not Modified (36ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-04-06 19:37:49 -0400
+Served asset /bootstrap-tooltip.js - 304 Not Modified (42ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-04-06 19:37:49 -0400
+Served asset /bootstrap-typeahead.js - 304 Not Modified (19ms)
+
+
+Started GET "/assets/funds.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 19:37:49 -0400
+Served asset /funds.js - 304 Not Modified (17ms)
+
+
+Started GET "/funds/1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 19:37:52 -0400
+Processing by FundsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFund Load (12.0ms)[0m  [1mSELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 ORDER BY funds.name LIMIT 1[0m
+  Rendered funds/show.html.erb within layouts/application (623.0ms)
+Completed 500 Internal Server Error in 798ms
+
+ActionView::Template::Error (/Users/Sueno/Documents/rails_project/whirr/fintechhack/app/models/valuation.rb:6: syntax error, unexpected ','
+
+  validates, :value, presence: true
+                   ^):
+    1: <h1><%= @fund.name %></h1>
+    2: 
+    3: <% if @flows.present? %>
+    4: 	<table style="width:60%">
+    5: 		<th>
+    6: 			<td>Date</td>
+  app/views/funds/show.html.erb:3:in `_app_views_funds_show_html_erb___541343246_8244'
+
+
+  Rendered /Users/Sueno/.rvm/gems/jruby-1.7.3/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (15.0ms)
+  Rendered /Users/Sueno/.rvm/gems/jruby-1.7.3/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (8.0ms)
+  Rendered /Users/Sueno/.rvm/gems/jruby-1.7.3/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (443.0ms)
+
+
+Started GET "/funds/1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 19:38:39 -0400
+Processing by FundsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (1.0ms)[0m  SELECT name FROM sqlite_master WHERE type = 'table' AND NOT name = 'sqlite_sequence' AND name = "funds"
+  [1m[36mFund Load (0.0ms)[0m  [1mSELECT "funds".* FROM "funds" WHERE "funds"."id" = 1 ORDER BY funds.name LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT name FROM sqlite_master WHERE type = 'table' AND NOT name = 'sqlite_sequence' AND name = "flows"
+  [1m[36m (377.0ms)[0m  [1mSELECT COUNT(*) FROM "flows" WHERE "flows"."fund_id" = 1[0m
+  [1m[35mFlow Load (54.0ms)[0m  SELECT "flows".* FROM "flows" WHERE "flows"."fund_id" = 1 ORDER BY flows.day
+  Rendered funds/show.html.erb within layouts/application (2385.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (3.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 4826ms (Views: 3523.0ms | ActiveRecord: 904.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 19:38:44 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/custom.css?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 19:38:45 -0400
+Served asset /custom.css - 304 Not Modified (28ms)
+
+
+Started GET "/assets/flows.css?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 19:38:45 -0400
+Served asset /flows.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/funds.css?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 19:38:45 -0400
+Served asset /funds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 19:38:45 -0400
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/valuations.css?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 19:38:45 -0400
+Served asset /valuations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 19:38:45 -0400
+Served asset /application.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 19:38:45 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 19:38:45 -0400
+Served asset /bootstrap-transition.js - 304 Not Modified (26ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 19:38:45 -0400
+Served asset /bootstrap-affix.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 19:38:45 -0400
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 19:38:45 -0400
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 19:38:45 -0400
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 19:38:45 -0400
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 19:38:45 -0400
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 19:38:45 -0400
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 19:38:45 -0400
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 19:38:45 -0400
+Served asset /bootstrap-tab.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 19:38:45 -0400
+Served asset /bootstrap-tooltip.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 19:38:45 -0400
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 19:38:45 -0400
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 19:38:45 -0400
+Served asset /bootstrap.js - 304 Not Modified (37ms)
+
+
+Started GET "/assets/flows.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 19:38:45 -0400
+Served asset /flows.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/funds.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 19:38:46 -0400
+Served asset /funds.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/valuations.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 19:38:46 -0400
+Served asset /valuations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 0:0:0:0:0:0:0:1%0 at 2013-04-06 19:38:46 -0400
+Served asset /application.js - 304 Not Modified (8ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
