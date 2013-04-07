@@ -1,4 +1,11 @@
 GIT
+  remote: git@github.com:Grizzlybearded/finance.git
+  revision: 02cc0b9e3142c5ebce80b0c4f1505060d6582f43
+  specs:
+    finance (1.1.2)
+      flt (>= 1.3.0)
+
+GIT
   remote: git@github.com:dsri/bberg.git
   revision: 6012ea8dfb89dc8fd17537e7869ef121a0bde7d5
   specs:
@@ -54,6 +61,7 @@ GEM
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    flt (1.3.0)
     hike (1.2.1)
     i18n (0.6.1)
     jdbc-postgres (9.2.1002.1)
@@ -133,6 +141,7 @@ DEPENDENCIES
   bberg!
   bootstrap-sass (= 2.1)
   coffee-rails (~> 3.2.1)
+  finance!
   jquery-rails
   puma
   rails (= 3.2.13)
