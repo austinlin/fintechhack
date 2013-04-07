@@ -3,7 +3,7 @@ class Valuation < ActiveRecord::Base
 
   validates :fund_id, presence: true
   validates :day, presence: true
-  validates, :value, presence: true
+  validates :value, presence: true
 
   default_scope order:'valuations.day'
 
